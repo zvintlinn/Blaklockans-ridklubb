@@ -36,6 +36,10 @@ button {
     margin: 20px;
     align-items: center;
     gap: 10px;
+    background-color: #ffffff5e;
+    width: 35vw;
+    padding: 0.5vw;
+    border-radius: 10px;
   }
   img {
     height: 5.8vw;
@@ -48,4 +52,10 @@ button {
     color: #6645df;
     margin: 0;
   }
+}
+#hero {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
 }
