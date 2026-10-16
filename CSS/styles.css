@@ -1,0 +1,13 @@
+:root {
+  --lightbody: #f4f3ff;
+  --beige: #d5cdc180;
+  --darkbutton: #453862;
+  --darktext: #200f48;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--lightbody);
+}
