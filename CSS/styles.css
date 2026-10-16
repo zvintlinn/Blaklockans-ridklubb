@@ -31,11 +31,21 @@ button {
   height: 100px;
 }
 #logo {
+  a {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    gap: 10px;
+  }
   img {
-    height: 100px;
-    width: 100px;
+    height: 5.8vw;
+    width: 5.8vw;
   }
   p {
     font-family: charm;
+    font-size: 2.9vw;
+    font-weight: bold;
+    color: #6645df;
+    margin: 0;
   }
 }
