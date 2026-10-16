@@ -7,7 +7,35 @@
 
 * {
   box-sizing: border-box;
+  font-family: roboto serif;
 }
 body {
   background-color: var(--lightbody);
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  color: var(--darktext);
+}
+a {
+  text-decoration: none;
+  color: var(--darktext);
+}
+button {
+  background-color: var(--darkbutton);
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  height: 100px;
+}
+#logo {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  p {
+    font-family: charm;
+  }
 }
