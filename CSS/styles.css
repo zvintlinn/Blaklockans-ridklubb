@@ -13,6 +13,8 @@ body {
   background-color: var(--lightbody);
   margin: 0;
 }
+main {
+}
 h1,
 h2,
 h3 {
@@ -27,8 +29,9 @@ button {
   color: #ffffff;
   font-weight: 600;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   height: 100px;
+  padding: 0;
 }
 #logo {
   a {
@@ -79,7 +82,28 @@ button {
   margin: 2vw;
   text-align: center;
   align-content: center;
+  position: relative;
+}
+#content {
+  padding-top: 8vw;
 }
 #start-riding {
-  margin-top: 100px;
+  text-align: center;
+  font-size: 2.9vw;
+  background-color: var(--beige);
+  border-radius: 20px;
+  margin: 2.9vw;
+  padding: 4.65vw;
+
+  button {
+    height: 5.8vw;
+    width: 19.7vw;
+    font-size: 2vw;
+  }
+}
+#news {
+  margin: 2.9vw;
+  img {
+    width: 100%;
+  }
 }
