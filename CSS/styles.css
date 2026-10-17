@@ -33,10 +33,10 @@ button {
 #logo {
   a {
     display: flex;
-    margin: 20px;
+    margin: 2vw;
     align-items: center;
     gap: 10px;
-    background-color: #ffffff5e;
+    background-color: #ffffffb2;
     width: 35vw;
     padding: 0.5vw;
     border-radius: 10px;
@@ -53,6 +53,13 @@ button {
     margin: 0;
   }
 }
+#menu {
+  position: absolute;
+  top: 1vw;
+  right: 2vw;
+  background-color: #ffffffb2;
+  border-radius: 10px;
+}
 #nav {
   display: none;
 }
@@ -65,8 +72,14 @@ button {
 #slogan {
   font-size: 3.72vw;
   width: 34.8vw;
-  background-color: #ffffff5e;
+  height: 24.8vw;
+  background-color: #ffffffb2;
   border-radius: 20px;
-  padding: 20px;
-  margin: 20px;
+  padding: 2vw;
+  margin: 2vw;
+  text-align: center;
+  align-content: center;
+}
+#start-riding {
+  margin-top: 100px;
 }
