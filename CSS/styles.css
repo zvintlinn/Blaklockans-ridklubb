@@ -62,3 +62,11 @@ button {
   z-index: -1;
   width: 100%;
 }
+#slogan {
+  font-size: 3.72vw;
+  width: 34.8vw;
+  background-color: #ffffff5e;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
