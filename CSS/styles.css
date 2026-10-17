@@ -53,6 +53,9 @@ button {
     margin: 0;
   }
 }
+#nav {
+  display: none;
+}
 #hero {
   position: absolute;
   top: 0px;
