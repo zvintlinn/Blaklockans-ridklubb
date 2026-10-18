@@ -119,3 +119,14 @@ button {
     padding: 2vw;
   }
 }
+#faq {
+  background-color: var(--beige);
+  border-radius: 20px;
+  margin: 2.9vw;
+  padding: 2vw;
+  h2 {
+    text-align: center;
+  }
+  div {
+  }
+}
