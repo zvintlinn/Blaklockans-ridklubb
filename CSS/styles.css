@@ -103,7 +103,15 @@ button {
 }
 #news {
   margin: 2.9vw;
+  padding: 2vw;
+  background-color: var(--beige);
+  border-radius: 20px;
+  text-align: center;
   img {
     width: 100%;
+  }
+  div {
+    background-color: #ffffff;
+    text-align: left;
   }
 }
