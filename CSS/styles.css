@@ -113,5 +113,9 @@ button {
   div {
     background-color: #ffffff;
     text-align: left;
+    margin-top: 2vw;
+  }
+  div > div {
+    padding: 2vw;
   }
 }
