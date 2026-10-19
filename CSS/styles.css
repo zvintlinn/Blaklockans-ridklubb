@@ -185,7 +185,7 @@ button {
 #weather {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   text-align: center;
   justify-items: center;
   align-items: center;
@@ -197,15 +197,36 @@ button {
     max-width: 25vw;
   }
 }
+#temp {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  align-content: center;
+  margin-bottom: 1.8vw;
+}
 #to-do {
   background-color: var(--beige);
   border-radius: 20px;
   padding: 2vw;
   margin: 2.9vw;
+
+  h2 {
+    font-size: 2.32vw;
+  }
+  > div {
+    border: 0.1vw solid;
+    display: flex;
+  }
   h3 {
     font-size: 2.32vw;
   }
-  div {
-    border: 1px solid;
-  }
+}
+#undone {
+  flex: 1;
+  padding: 1vw;
+}
+#done {
+  flex: 1;
+  padding: 1vw;
 }
