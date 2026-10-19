@@ -168,3 +168,19 @@ button {
     margin: 1vw;
   }
 }
+/* STALLINFO */
+#map {
+  border-radius: 20px;
+}
+#weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  h2 {
+    /* text-align: center; */
+    max-width: 25vw;
+  }
+}
