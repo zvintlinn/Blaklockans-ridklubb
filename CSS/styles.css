@@ -154,3 +154,11 @@ button {
   }
 }
 /* VÅRA HÄSTAR */
+#horse-filter {
+  margin: 2vw;
+  text-align: right;
+  font-weight: 400;
+  label {
+    margin: 1vw;
+  }
+}
