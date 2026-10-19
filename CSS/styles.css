@@ -48,6 +48,13 @@ button {
   background-size: 100%;
   background-position: center;
   padding: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    height: 5.8vw;
+    width: 5.8vw;
+  }
 }
 /* INDEX */
 #logo {
@@ -74,12 +81,11 @@ button {
   }
 }
 #menu {
-  position: absolute;
+  /* position: absolute;
   top: 2vw;
-  right: 2vw;
+  right: 2vw; */
   background-color: #ffffffb2;
   border-radius: 10px;
-  margin: 2vw;
 }
 #nav {
   display: none;
