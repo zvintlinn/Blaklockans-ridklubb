@@ -36,9 +36,20 @@ button {
   font-weight: 600;
   border: none;
   border-radius: 10px;
-  height: 100px;
+  height: 5.81vw;
   padding: 0;
 }
+.first-title {
+  justify-self: center;
+  font-size: 3.6vw;
+}
+.mobile-header {
+  background-image: url(../images/flock.jpg);
+  background-size: 100%;
+  background-position: center;
+  padding: 2vw;
+}
+/* INDEX */
 #logo {
   a {
     display: flex;
@@ -68,6 +79,7 @@ button {
   right: 2vw;
   background-color: #ffffffb2;
   border-radius: 10px;
+  margin: 2vw;
 }
 #nav {
   display: none;
@@ -141,3 +153,4 @@ button {
     font-size: 2vw;
   }
 }
+/* VÅRA HÄSTAR */
