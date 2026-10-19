@@ -166,13 +166,16 @@ button {
   margin: 2vw;
   text-align: right;
   font-weight: 400;
+  font-size: 2vw;
   label {
     margin: 1vw;
+  }
+  select {
+    font-size: 2vw;
   }
 }
 /* STALLINFO */
 #map {
-  /* justify-self: center; */
   img {
     border-radius: 20px;
     width: 100%;
