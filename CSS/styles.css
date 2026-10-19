@@ -170,7 +170,11 @@ button {
 }
 /* STALLINFO */
 #map {
-  border-radius: 20px;
+  /* justify-self: center;
+  img {
+    border-radius: 20px;
+    max-width: 100% auto;
+  } */
 }
 #weather {
   display: grid;
@@ -179,8 +183,19 @@ button {
   text-align: center;
   justify-items: center;
   align-items: center;
+  background-color: var(--beige);
+  border-radius: 20px;
   h2 {
     /* text-align: center; */
     max-width: 25vw;
+  }
+}
+#to-do {
+  background-color: var(--beige);
+  border-radius: 20px;
+  padding: 2vw;
+
+  div {
+    border: 1px solid;
   }
 }
