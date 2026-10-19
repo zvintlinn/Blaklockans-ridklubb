@@ -176,6 +176,7 @@ button {
 }
 /* STALLINFO */
 #map {
+  margin: 2.9vw;
   img {
     border-radius: 20px;
     width: 100%;
@@ -190,8 +191,9 @@ button {
   align-items: center;
   background-color: var(--beige);
   border-radius: 20px;
+  margin: 2.9vw;
   h2 {
-    /* text-align: center; */
+    font-size: 2.32vw;
     max-width: 25vw;
   }
 }
@@ -199,7 +201,10 @@ button {
   background-color: var(--beige);
   border-radius: 20px;
   padding: 2vw;
-
+  margin: 2.9vw;
+  h3 {
+    font-size: 2.32vw;
+  }
   div {
     border: 1px solid;
   }
