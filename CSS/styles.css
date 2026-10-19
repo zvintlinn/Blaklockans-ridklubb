@@ -13,8 +13,6 @@ body {
   background-color: var(--lightbody);
   margin: 0;
 }
-main {
-}
 footer {
   background-color: #ffffff;
   text-align: center;
@@ -66,7 +64,7 @@ button {
 }
 #menu {
   position: absolute;
-  top: 1vw;
+  top: 2vw;
   right: 2vw;
   background-color: #ffffffb2;
   border-radius: 10px;
