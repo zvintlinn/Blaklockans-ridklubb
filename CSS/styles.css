@@ -58,6 +58,9 @@ button {
 }
 /* INDEX */
 #logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   a {
     display: flex;
     margin: 2vw;
@@ -81,9 +84,8 @@ button {
   }
 }
 #menu {
-  /* position: absolute;
-  top: 2vw;
-  right: 2vw; */
+  margin: 2vw;
+  margin-top: 0;
   background-color: #ffffffb2;
   border-radius: 10px;
 }
@@ -170,11 +172,11 @@ button {
 }
 /* STALLINFO */
 #map {
-  /* justify-self: center;
+  /* justify-self: center; */
   img {
     border-radius: 20px;
-    max-width: 100% auto;
-  } */
+    width: 100%;
+  }
 }
 #weather {
   display: grid;
