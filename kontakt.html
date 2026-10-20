@@ -66,13 +66,26 @@
           <div>
             <label for="phone">Telefon:</label><input type="tel" id="phone" />
           </div>
-          <div>
-            <label for="exp">Ridvana:</label><input type="radio" id="exp" />
+          <div id="exp">
+            <p>Ridvana:</p>
+            <label
+              ><input type="radio" name="exp" value="amateur" />Nybörjare</label
+            >
+            <label
+              ><input type="radio" name="exp" value="one-two" />1-2 år</label
+            >
+            <label
+              ><input type="radio" name="exp" value="three-four" />3-4 år</label
+            >
+            <label
+              ><input type="radio" name="exp" value="five-plus" />5+ år</label
+            >
           </div>
           <div>
             <label for="message">Meddelande:</label
-            ><input type="text" id="message" />
+            ><textarea rows="4" cols="30" id="message"></textarea>
           </div>
+          <button type="submit">Skicka</button>
         </form>
         <div id="deco-photo">
           <img src="images/horses/brun.jpg" alt="brun häst på äng" /><img
