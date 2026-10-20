@@ -282,13 +282,39 @@ button {
   grid-row: span 2;
 
   p {
-    /* width: 15vw; */
     text-align: right;
     font-size: 2vw;
     color: var(--darktext);
     font-weight: 600;
     margin-top: 3vw;
     margin-bottom: 3vw;
-    /* line-height: 1.5; */
+  }
+}
+#form-section {
+  background-color: var(--beige);
+  padding: 2.9vw;
+  margin: 2.9vw;
+  border-radius: 20px;
+  > div {
+    /* text-align: center; */
+    align-content: center;
+  }
+}
+#contact-form {
+  div {
+    margin: 1.16vw;
+  }
+
+  input {
+    text-align: right;
+    height: 4.76vw;
+    margin: 1vw;
+  }
+}
+#deco-photo {
+  img {
+    width: 22vw;
+    border-radius: 50%;
+    margin: 3.4vw;
   }
 }
