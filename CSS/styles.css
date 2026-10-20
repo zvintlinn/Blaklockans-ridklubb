@@ -22,10 +22,21 @@ footer {
   margin: 0;
   color: #626262;
 }
-h1,
-h2,
+h1 {
+  color: var(--darktext);
+  font-size: 3.72vw;
+}
+h2 {
+  color: var(--darktext);
+  font-size: 2.5vw;
+}
 h3 {
   color: var(--darktext);
+  font-size: 2vw;
+}
+p {
+  color: var(--darktext);
+  font-size: 1.5vw;
 }
 a {
   text-decoration: none;
@@ -44,8 +55,9 @@ button {
 /* KLASSER */
 .first-title {
   justify-self: center;
-  font-size: 3.6vw;
+  font-size: 3vw;
 }
+
 .mobile-header {
   background-image: url(../images/flock.jpg);
   background-size: 100%;
@@ -59,6 +71,7 @@ button {
     width: 5.8vw;
   }
 }
+
 .beige-div {
   background-color: var(--beige);
   border-radius: 20px;
@@ -125,9 +138,9 @@ button {
 }
 #start-riding {
   text-align: center;
-  font-size: 2.5vw;
-  padding: 4.65vw;
-
+  p {
+    font-size: 2vw;
+  }
   button {
     height: 5.8vw;
     width: 19.7vw;
@@ -159,10 +172,6 @@ button {
     border: 1px solid;
     border-radius: 20px;
   }
-  h3 {
-    font-weight: 500;
-    font-size: 2vw;
-  }
 }
 
 /* VÅRA HÄSTAR */
@@ -181,9 +190,7 @@ button {
 
 /* STALLINFO */
 #map {
-  h1 {
-    margin-top: 0;
-  }
+  padding-top: 1vw;
   img {
     border-radius: 20px;
     width: 100%;
@@ -196,10 +203,6 @@ button {
   text-align: center;
   justify-items: center;
   align-items: center;
-  h2 {
-    font-size: 2.32vw;
-    max-width: 25vw;
-  }
 }
 #temp {
   background-color: #ffffff;
@@ -210,17 +213,11 @@ button {
   margin-bottom: 1.8vw;
 }
 #to-do {
-  h2 {
-    font-size: 2.32vw;
-  }
   > div {
     border: 0.1vw solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-  }
-  h3 {
-    font-size: 2.32vw;
   }
   button {
     grid-column: span 2;
@@ -253,12 +250,6 @@ button {
     margin: 0;
     padding: 0;
   }
-  h1 {
-    font-size: 3.72vw;
-  }
-  h2 {
-    font-size: 2.32vw;
-  }
   div:nth-child(3) {
     align-content: center;
   }
@@ -269,14 +260,11 @@ button {
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: 100%;
-  border-radius: 20px;
-  padding: 2.9vw;
   grid-row: span 2;
 
   p {
     text-align: right;
     font-size: 2vw;
-    color: var(--darktext);
     font-weight: 600;
     margin-top: 3vw;
     margin-bottom: 3vw;
