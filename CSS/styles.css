@@ -4,7 +4,7 @@
   --darkbutton: #453862;
   --darktext: #200f48;
 }
-
+/* UNIVERSAL */
 * {
   box-sizing: border-box;
   font-family: roboto serif;
@@ -39,6 +39,7 @@ button {
   height: 5.81vw;
   padding: 0;
 }
+/* KLASSER */
 .first-title {
   justify-self: center;
   font-size: 3.6vw;
@@ -246,4 +247,23 @@ button {
 #done {
   flex: 1;
   padding: 1vw;
+}
+/* KONTAKT */
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2.9vw;
+}
+#contact-info {
+  background-image: url(../images/flock-barn.jpg);
+  background-color: #ffffffbb;
+  background-blend-mode: overlay;
+  background-size: 100%;
+  border-radius: 20px;
+  padding: 2.9vw;
+  text-align: right;
+  color: var(--darktext);
+  font-weight: 600;
+  grid-row: span 2;
 }
