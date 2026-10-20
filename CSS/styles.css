@@ -5,7 +5,7 @@
   --darktext: #200f48;
 }
 
-/* UNIVERSAL */
+/* *** UNIVERSAL *** */
 * {
   box-sizing: border-box;
   font-family: roboto serif;
@@ -53,7 +53,7 @@ button {
   padding: 1.5vw;
 }
 
-/* KLASSER */
+/* *** KLASSER *** */
 
 /* Header till liten skärm */
 .mobile-header {
@@ -68,6 +68,11 @@ button {
     height: 5.8vw;
     width: 5.8vw;
   }
+}
+
+/* Speciellt till header på index */
+.mobile-header-index {
+  margin: 3vw;
 }
 
 .beige-div {
@@ -85,7 +90,13 @@ button {
   }
 }
 
-/* INDEX */
+.round-pic {
+  width: 22vw;
+  border-radius: 50%;
+  margin: 3.4vw;
+}
+
+/* *** INDEX *** */
 
 /* Blåklockans ridklubb text + logga */
 #logo {
@@ -94,7 +105,6 @@ button {
   align-items: center;
   a {
     display: flex;
-    margin: 2vw;
     align-items: center;
     gap: 10px;
     background-color: #ffffffb2;
@@ -114,21 +124,29 @@ button {
     margin: 0;
   }
 }
+
+/* Menyknappen på liten skärm */
 #menu {
   margin: 2vw;
   margin-top: 0;
   background-color: #ffffffb2;
   border-radius: 10px;
 }
+
+/* Navigering */
 #nav {
   display: none;
 }
+
+/* Stor herobild */
 #hero {
   position: absolute;
   top: 0px;
   z-index: -1;
   width: 100%;
 }
+
+/* Text "gemenskap och ridglädje..." */
 #slogan {
   width: 34.8vw;
   height: 24.8vw;
@@ -137,9 +155,13 @@ button {
   align-content: center;
   position: relative;
 }
+
+/* Fixar mellanrum till hero på index mobil */
 #content {
-  padding-top: 8vw;
+  padding-top: 4vw;
 }
+
+/* nyheter */
 #news {
   text-align: center;
   img {
@@ -154,6 +176,8 @@ button {
     padding: 2vw;
   }
 }
+
+/* Vanliga frågor */
 #faq {
   margin: 2.9vw;
   padding: 2vw;
@@ -167,7 +191,7 @@ button {
   }
 }
 
-/* VÅRA HÄSTAR */
+/* *** VÅRA HÄSTAR *** */
 #horse-filter {
   margin: 2vw;
   text-align: right;
@@ -181,7 +205,9 @@ button {
   }
 }
 
-/* STALLINFO */
+/* *** STALLINFO *** */
+
+/* Karta över hagar */
 #map {
   padding-top: 1vw;
   img {
@@ -189,6 +215,8 @@ button {
     width: 100%;
   }
 }
+
+/* Väderprognos */
 #weather {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -197,6 +225,7 @@ button {
   justify-items: center;
   align-items: center;
 }
+
 #temp {
   background-color: #ffffff;
   border-radius: 50%;
@@ -205,6 +234,8 @@ button {
   align-content: center;
   margin-bottom: 1.8vw;
 }
+
+/* Att göra-lista */
 #to-do {
   > div {
     border: 0.1vw solid;
@@ -228,7 +259,9 @@ button {
   padding: 1vw;
 }
 
-/* KONTAKT */
+/* *** KONTAKT *** */
+
+/* Id på hela första sektionen */
 #contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -244,6 +277,8 @@ button {
     align-content: center;
   }
 }
+
+/* Kontaktinformationen */
 #contact-info {
   background-image: url(../images/flock-barn.jpg);
   background-color: #ffffffbb;
@@ -260,12 +295,15 @@ button {
     margin-bottom: 3vw;
   }
 }
+
+/* Sektion för formulär */
 #form-section {
   > div {
-    /* text-align: center; */
     align-content: center;
   }
 }
+
+/* Själva kontaktformuläret */
 #contact-form {
   font-size: 2vw;
 
@@ -280,6 +318,8 @@ button {
     margin: 1vw;
   }
 }
+
+/* Radioknapparna för ridvana */
 #exp {
   display: flex;
   align-items: center;
@@ -293,9 +333,4 @@ button {
   input {
     width: 3.5vw;
   }
-}
-.round-pic {
-  width: 22vw;
-  border-radius: 50%;
-  margin: 3.4vw;
 }
