@@ -55,6 +55,7 @@ button {
 
 /* KLASSER */
 
+/* Header till liten skärm */
 .mobile-header {
   background-image: url(../images/flock.jpg);
   background-size: 100%;
@@ -75,13 +76,18 @@ button {
   margin: 3vw;
   padding: 3vw;
 }
+
+/* Centrerad text i div */
 .textbox {
   text-align: center;
   p {
     font-size: 2vw;
   }
 }
+
 /* INDEX */
+
+/* Blåklockans ridklubb text + logga */
 #logo {
   display: flex;
   justify-content: space-between;
@@ -124,13 +130,9 @@ button {
   width: 100%;
 }
 #slogan {
-  font-size: 3.72vw;
   width: 34.8vw;
   height: 24.8vw;
   background-color: #ffffffb2;
-  border-radius: 20px;
-  padding: 2vw;
-  margin: 2vw;
   text-align: center;
   align-content: center;
   position: relative;
