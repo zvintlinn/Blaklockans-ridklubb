@@ -90,6 +90,7 @@ button {
   }
 }
 
+/* Alla runda bilder */
 .round-pic {
   width: 22vw;
   border-radius: 50%;
@@ -213,6 +214,7 @@ button {
   img {
     border-radius: 20px;
     width: 100%;
+    padding: 0 5vw 0 5vw;
   }
 }
 
@@ -297,40 +299,33 @@ button {
 }
 
 /* Sektion för formulär */
-#form-section {
-  > div {
-    align-content: center;
-  }
-}
 
 /* Själva kontaktformuläret */
 #contact-form {
-  font-size: 2vw;
-
   div {
-    margin: 1.16vw;
+    margin-top: 2vw;
   }
-
-  input {
-    justify-items: right;
-    height: 4.76vw;
-    width: 40vw;
+  label {
+    display: block;
+    margin: 1vw;
+  }
+  input,
+  textarea {
+    width: 100%;
+    margin: 1vw;
+    padding: 1.5vw;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
     margin: 1vw;
   }
 }
-
-/* Radioknapparna för ridvana */
 #exp {
-  display: flex;
-  align-items: center;
-  p {
-    width: 15vw;
-    margin: 0;
-  }
   label {
-    font-size: 2vw;
+    font-size: 0.8rem;
   }
   input {
-    width: 3.5vw;
+    width: 2vw;
   }
 }

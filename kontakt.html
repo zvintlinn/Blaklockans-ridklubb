@@ -38,6 +38,7 @@
       </nav>
     </header>
     <main>
+      <!-- Grid med kontaktinfo och titel innan formulär -->
       <section id="contact">
         <div class="beige-div"><h1>Vill du börja rida hos oss?</h1></div>
         <div id="contact-info" class="beige-div">
@@ -47,25 +48,30 @@
         </div>
         <div><h2>Skicka din förfrågan via formuläret nedan:</h2></div>
       </section>
+
+      <!-- Sektion för formulär -->
       <section id="form-section" class="beige-div">
-        <form action="" id="contact-form">
+        <form id="contact-form">
           <div>
             <label for="first-name">Förnamn:</label
             ><input type="text" id="first-name" />
           </div>
+
           <div>
             <label for="surname">Efternamn:</label
             ><input type="text" id="surname" />
           </div>
+
           <div>
             <label for="age">Ålder:</label><input type="number" id="age" />
           </div>
-          <div>
-            <label for="email">E-post:</label><input type="email" id="email" />
-          </div>
+
+          <label for="email">E-post:</label><input type="email" id="email" />
+
           <div>
             <label for="phone">Telefon:</label><input type="tel" id="phone" />
           </div>
+
           <div id="exp">
             <p>Ridvana:</p>
             <label
@@ -81,10 +87,12 @@
               ><input type="radio" name="exp" value="five-plus" />5+ år</label
             >
           </div>
+
           <div>
             <label for="message">Meddelande:</label
             ><textarea rows="4" cols="30" id="message"></textarea>
           </div>
+
           <button type="submit">Skicka</button>
         </form>
         <div>
