@@ -177,6 +177,12 @@ button {
 /* STALLINFO */
 #map {
   margin: 2.9vw;
+  padding: 2.9vw;
+  background-color: var(--beige);
+  border-radius: 20px;
+  h1 {
+    margin-top: 0;
+  }
   img {
     border-radius: 20px;
     width: 100%;
