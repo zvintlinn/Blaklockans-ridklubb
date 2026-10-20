@@ -301,14 +301,31 @@ button {
   }
 }
 #contact-form {
+  font-size: 2vw;
+
   div {
     margin: 1.16vw;
   }
 
   input {
-    text-align: right;
+    justify-items: right;
     height: 4.76vw;
+    width: 40vw;
     margin: 1vw;
+  }
+}
+#exp {
+  display: flex;
+  align-items: center;
+  p {
+    width: 15vw;
+    margin: 0;
+  }
+  label {
+    font-size: 2vw;
+  }
+  input {
+    width: 3.5vw;
   }
 }
 #deco-photo {
