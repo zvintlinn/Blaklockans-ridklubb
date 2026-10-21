@@ -82,6 +82,11 @@ button {
   padding: 3vw;
 }
 
+/* Fixar mellanrum till hero på index mobil */
+.content {
+  padding-top: 4vw;
+}
+
 /* Centrerad text i div */
 .textbox {
   text-align: center;
@@ -160,11 +165,6 @@ button {
   text-align: center;
   align-content: center;
   position: relative;
-}
-
-/* Fixar mellanrum till hero på index mobil */
-#content {
-  padding-top: 4vw;
 }
 
 /* nyheter */
@@ -371,11 +371,29 @@ button {
   }
 
   /* HERO */
+
+  .hero-section {
+    height: 45vw;
+  }
   #hero {
     position: unset;
   }
   #slogan {
     position: relative;
     top: -38vw;
+  }
+
+  .content {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1.7fr 1.3fr;
+    grid-template-rows: 1.1fr 1.9fr;
+  }
+  #news {
+    grid-row: span 2;
+  }
+  #faq {
+    padding: 0;
+    margin-top: 0;
   }
 }
