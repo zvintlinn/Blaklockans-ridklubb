@@ -345,18 +345,18 @@ button {
   .header-index {
     margin: 0;
   }
-
+  /* Loggan är centrerad */
   #logo {
     justify-content: center;
     a {
       background-color: transparent;
     }
   }
-
+  /* Menyknappen ska inte visas */
   #menu {
     display: none;
   }
-
+  /* Nav ska visas istället */
   #nav {
     display: block;
     ul {
@@ -373,5 +373,9 @@ button {
   /* HERO */
   #hero {
     position: unset;
+  }
+  #slogan {
+    position: relative;
+    top: -38vw;
   }
 }
