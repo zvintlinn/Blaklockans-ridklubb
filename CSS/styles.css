@@ -97,6 +97,11 @@ button {
   margin: 3.4vw;
 }
 
+/* Knappar som sitter till höger */
+.button-right {
+  justify-self: right;
+}
+
 /* *** INDEX *** */
 
 /* Blåklockans ridklubb text + logga */
@@ -298,33 +303,36 @@ button {
   }
 }
 
-/* Sektion för formulär */
-
-/* Själva kontaktformuläret */
-#contact-form {
+/* Kontaktformulär */
+.contact-form {
   div {
     margin-top: 2vw;
   }
   label {
     display: block;
     margin: 1vw;
+    font-size: 2vw;
   }
   input,
   textarea {
     width: 100%;
-    margin: 1vw;
     padding: 1.5vw;
     font-size: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    border: #a7a7a7 solid 1px;
   }
   p {
-    font-size: 1rem;
+    font-size: 2vw;
     margin: 1vw;
   }
 }
+#age {
+  width: 8vw;
+}
 #exp {
-  label {
-    font-size: 0.8rem;
-  }
+  display: flex;
+  align-items: center;
   input {
     width: 2vw;
   }
