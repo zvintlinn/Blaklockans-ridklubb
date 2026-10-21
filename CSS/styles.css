@@ -71,7 +71,7 @@ button {
 }
 
 /* Speciellt till header på index */
-.mobile-header-index {
+.header-index {
   margin: 3vw;
 }
 
@@ -335,5 +335,43 @@ button {
   align-items: center;
   input {
     width: 2vw;
+  }
+}
+
+/* ----------------------------------- MEDIA QUERY ----------------------------------------- */
+
+@media (min-width: 768px) {
+  /* INDEX */
+  .header-index {
+    margin: 0;
+  }
+
+  #logo {
+    justify-content: center;
+    a {
+      background-color: transparent;
+    }
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #nav {
+    display: block;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+    li {
+      padding: 1vw 5.5vw 1vw 5.5vw;
+    }
+  }
+
+  /* HERO */
+  #hero {
+    position: unset;
   }
 }
