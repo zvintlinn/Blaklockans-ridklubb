@@ -492,6 +492,9 @@ button {
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
     justify-self: center;
+    section {
+      padding-top: 2vw;
+    }
   }
 
   #map {
@@ -508,6 +511,7 @@ button {
   }
 
   #temp {
+    justify-self: center;
     width: 10vw;
     height: 10vw;
   }
