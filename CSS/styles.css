@@ -359,6 +359,7 @@ button {
   }
   .textbox {
     align-self: flex-start;
+    padding-top: 1.5vw;
     padding-left: 5vw;
     padding-right: 5vw;
     p {
@@ -374,6 +375,14 @@ button {
     justify-content: center;
     a {
       background-color: transparent;
+      justify-content: center;
+    }
+    img {
+      height: 3.7vw;
+      width: 3.7vw;
+    }
+    p {
+      font-size: clamp(1rem, 2.2vw, 4.44rem);
     }
   }
   /* Menyknappen ska inte visas */
@@ -413,6 +422,7 @@ button {
   #slogan {
     position: absolute;
     top: 2.5vw;
+    left: 9vw;
     padding: 10px;
     max-width: 23.75vw;
     max-height: 15.625vw;
@@ -426,6 +436,7 @@ button {
   }
   #news {
     grid-row: span 2;
+    padding-top: 1.5vw;
   }
   #faq {
     padding: 0;
