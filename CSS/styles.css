@@ -292,13 +292,15 @@ button {
   background-repeat: no-repeat;
   background-size: 100%;
   grid-row: span 2;
+  align-content: center;
 
   p {
     text-align: right;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 600;
     margin-top: 3vw;
     margin-bottom: 3vw;
+    padding-right: 2vw;
   }
 }
 
