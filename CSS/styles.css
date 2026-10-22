@@ -343,6 +343,7 @@ button {
   /* *** UNIVERSAL *** */
   h1 {
     font-size: clamp(1rem, 2.8vw, 2rem);
+    text-align: center;
   }
   h2 {
     font-size: clamp(1rem, 2.2vw, 1.75rem);
@@ -472,5 +473,12 @@ button {
   #faq {
     padding: 0;
     margin-top: 0;
+  }
+
+  #horse-filter {
+    font-size: clamp(1rem, 1vw, 1.3rem);
+    select {
+      font-size: clamp(1rem, 1vw, 1.3rem);
+    }
   }
 }
