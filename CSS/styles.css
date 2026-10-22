@@ -341,7 +341,7 @@ button {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 2.8vw, 2rem);
   }
   h2 {
     font-size: clamp(1rem, 2.2vw, 1.75rem);
@@ -437,6 +437,9 @@ button {
   #news {
     grid-row: span 2;
     padding-top: 1.5vw;
+    div > div {
+      margin-top: 0;
+    }
   }
   #faq {
     padding: 0;
