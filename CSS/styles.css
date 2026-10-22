@@ -536,6 +536,7 @@ button {
     justify-content: space-evenly;
     align-items: center;
     padding-top: 0;
+    margin: 10vw;
     img {
       display: block;
       margin: 6vw;
@@ -544,13 +545,17 @@ button {
 
   #contact {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    /* div {
+      grid-column: 1;
+    } */
   }
 
   #contact-info {
     height: 250px;
     grid-row: 1;
+    grid-column: span 2;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -566,31 +571,30 @@ button {
     p:nth-child(1) {
       grid-column: span 2;
     }
-
-    .contact-form {
-      div {
-        margin-top: 1vw;
-      }
-      label {
-        font-size: clamp(1rem, 1vw, 1.1rem);
-        color: var(--darktext);
-      }
-      input,
-      textarea {
-        font-size: clamp(1rem, 1vw, 1.1rem);
-        padding: 1vw;
-      }
-      p {
-        font-size: inherit;
-        margin: 1vw;
-      }
+  }
+  .contact-form {
+    div {
+      margin-top: 1.5vw;
     }
-
-    .round-pic {
-      width: 20vw;
-      margin: 0;
-      margin: 0 2vw 0 2vw;
-      justify-self: center;
+    label {
+      font-size: clamp(1rem, 1vw, 1.1rem);
+      color: var(--darktext);
     }
+    input,
+    textarea {
+      font-size: clamp(1rem, 1vw, 1.1rem);
+      padding: 1vw;
+    }
+    p {
+      font-size: inherit;
+      margin: 1vw;
+    }
+  }
+
+  .round-pic {
+    width: 15vw;
+    margin: 0;
+    margin: 0 2vw 0 2vw;
+    justify-self: center;
   }
 }
