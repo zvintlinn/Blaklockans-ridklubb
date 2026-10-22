@@ -82,7 +82,7 @@ button {
 }
 
 /* Fixar mellanrum till hero på index mobil */
-.content {
+.index-content {
   padding-top: 4vw;
 }
 
@@ -377,6 +377,10 @@ button {
     margin: 0;
   }
 
+  .mobile-header {
+    all: unset;
+  }
+
   /* Beskär hero så den inte blir lika hög på desktop */
   .hero-section {
     position: relative;
@@ -389,8 +393,12 @@ button {
     }
   }
 
+  .content-divider {
+    border-bottom: #7b7b7b 1px solid;
+  }
+
   /* Lägger grid på main i index */
-  .content {
+  .index-content {
     padding: 0;
     display: grid;
     grid-template-columns: 1.7fr 1.3fr;
