@@ -613,6 +613,17 @@ button {
   #age {
     width: 5vw;
   }
+  #exp {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    label {
+      font-size: clamp(0.7rem, 1vw, 1.1rem);
+    }
+    input {
+      width: 1vw;
+    }
+  }
   .contact-form {
     div {
       margin-top: 1.5vw;
@@ -628,7 +639,7 @@ button {
       padding: 1vw;
     }
     p {
-      font-size: inherit;
+      font-size: clamp(0.7rem, 1vw, 1.1rem);
       margin: 1vw 1vw 1vw 0;
     }
   }
