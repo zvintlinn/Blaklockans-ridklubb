@@ -498,6 +498,7 @@ button {
     }
   }
 
+  /* Kartan lite mindre */
   #map {
     grid-column: 2;
     img {
@@ -507,6 +508,7 @@ button {
     }
   }
 
+  /* Väder/temp ligger under varandra */
   #weather {
     display: block;
   }
@@ -517,11 +519,19 @@ button {
     height: 10vw;
   }
 
+  /* Att göra flyttas till vänster kant */
   #to-do {
     grid-column: 1;
     grid-row: 1;
     div {
       display: block;
     }
+  }
+
+  /* *** KONTAKT *** */
+
+  /* Sektion med formuläret */
+  #form-section {
+    display: flex;
   }
 }
