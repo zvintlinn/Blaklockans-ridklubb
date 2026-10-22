@@ -563,7 +563,7 @@ button {
     grid-row: 1;
     grid-column: span 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-blend-mode: unset;
     background-position: 0% 50%;
@@ -575,6 +575,12 @@ button {
       border-radius: 10px;
       margin: 0;
     }
+    p:nth-child(1) {
+      margin-left: 4vw;
+    }
+  }
+  #age {
+    width: 5vw;
   }
   .contact-form {
     div {
