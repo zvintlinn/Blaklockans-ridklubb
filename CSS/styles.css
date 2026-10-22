@@ -359,8 +359,10 @@ button {
   }
   .textbox {
     align-self: flex-start;
+    padding-left: 5vw;
+    padding-right: 5vw;
     p {
-      font-size: 1.4rem;
+      font-size: clamp(0.9rem, 1.2vw, 1.4rem);
     }
   }
   /* INDEX */
