@@ -353,9 +353,15 @@ button {
     font-size: 0.938rem;
   }
   button {
-    font-size: 15px;
-    height: 20px;
-    padding: 20px;
+    font-size: 0.938em;
+    height: 40px;
+    padding: 10px;
+  }
+  .textbox {
+    align-self: flex-start;
+    p {
+      font-size: 1.4rem;
+    }
   }
   /* INDEX */
   .header-index {
@@ -397,13 +403,16 @@ button {
   #slogan {
     position: relative;
     top: -38vw;
+    padding: 10px;
+    max-width: 456px;
+    max-height: 300px;
   }
 
   .content {
     padding: 0;
     display: grid;
     grid-template-columns: 1.7fr 1.3fr;
-    grid-template-rows: 1.1fr 1.9fr;
+    grid-template-rows: 0.7fr 1.8fr;
   }
   #news {
     grid-row: span 2;
