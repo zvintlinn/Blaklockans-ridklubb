@@ -359,6 +359,9 @@ button {
     height: 3em;
     padding: 0.5em;
   }
+  button:hover {
+    animation: scale 1s forwards;
+  }
 
   /* *** KLASSER *** */
 
@@ -411,6 +414,7 @@ button {
   /* Loggan är centrerad */
   #logo {
     justify-content: center;
+    animation: fadein 2s;
     a {
       background-color: transparent;
       justify-content: center;
@@ -459,10 +463,12 @@ button {
   #hero {
     position: unset;
     object-fit: cover;
+    animation: fadein 2s;
   }
 
   /* Lägger slogan över hero */
   #slogan {
+    animation: fadein 2s;
     position: absolute;
     top: 2.5vw;
     left: 9vw;
@@ -618,5 +624,21 @@ button {
     margin: 0;
     margin: 0 2vw 0 2vw;
     justify-self: center;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  from {
+    scale: 100%;
+  }
+  to {
+    scale: 120%;
   }
 }
