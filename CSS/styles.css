@@ -268,18 +268,17 @@ button {
 
 /* Id på hela första sektionen */
 #contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
   margin: 2.9vw;
   text-align: center;
   gap: 3vw;
   div {
     margin: 0;
-    padding: 0;
-  }
-  div:nth-child(3) {
-    align-content: center;
+    padding: 3vw;
+    align-self: center;
+    flex: 1;
+    height: 28.4vw;
   }
 }
 
@@ -295,7 +294,7 @@ button {
 
   p {
     text-align: right;
-    font-size: 3vw;
+    font-size: clamp(0.4rem, 2.5vw, 1.5rem);
     font-weight: 600;
     margin-top: 3vw;
     margin-bottom: 3vw;
