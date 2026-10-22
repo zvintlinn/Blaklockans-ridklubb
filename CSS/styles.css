@@ -218,7 +218,7 @@ button {
   img {
     border-radius: 20px;
     width: 100%;
-    padding: 0 5vw 0 5vw;
+    padding: 0 15vw 0 15vw;
   }
 }
 
@@ -518,6 +518,11 @@ button {
   /* Kartan lite mindre */
   #map {
     grid-column: 2;
+    h1 {
+      margin: 0;
+      margin-bottom: 1vw;
+      font-size: clamp(1rem, 2vw, 2rem);
+    }
     img {
       max-height: 100%;
       width: 30vw;
@@ -528,6 +533,9 @@ button {
   /* Väder/temp ligger under varandra */
   #weather {
     display: block;
+    h2 {
+      font-size: clamp(0.6rem, 1.5vw, 2rem);
+    }
   }
 
   #temp {
@@ -540,6 +548,10 @@ button {
   #to-do {
     grid-column: 1;
     grid-row: 1;
+    h2,
+    h3 {
+      font-size: clamp(0.6rem, 1.5vw, 2rem);
+    }
     div {
       display: block;
     }
@@ -585,6 +597,7 @@ button {
     align-items: center;
     background-blend-mode: unset;
     background-position: 0% 50%;
+    animation: fadein 2s;
     p {
       text-align: left;
       font-size: clamp(1rem, 2.2vw, 1.75rem);
@@ -607,6 +620,7 @@ button {
     label {
       font-size: clamp(1rem, 1vw, 1.1rem);
       color: var(--darktext);
+      margin-left: 0;
     }
     input,
     textarea {
@@ -615,7 +629,7 @@ button {
     }
     p {
       font-size: inherit;
-      margin: 1vw;
+      margin: 1vw 1vw 1vw 0;
     }
   }
 
