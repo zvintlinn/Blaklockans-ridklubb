@@ -17,7 +17,6 @@ body {
 footer {
   background-color: #ffffff;
   text-align: center;
-  font-size: 1.4vw;
   padding: 1.5vw;
   margin: 0;
   color: #626262;
@@ -341,6 +340,23 @@ button {
 /* ----------------------------------- MEDIA QUERY ----------------------------------------- */
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.938rem;
+  }
+  button {
+    font-size: 15px;
+    height: 20px;
+    padding: 20px;
+  }
   /* INDEX */
   .header-index {
     margin: 0;
