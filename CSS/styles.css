@@ -243,6 +243,7 @@ button {
 #to-do {
   > div {
     border: 0.1vw solid;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -355,9 +356,9 @@ button {
     font-size: clamp(0.8rem, 0.8vw, 1rem);
   }
   button {
-    font-size: 0.938em;
-    height: 40px;
-    padding: 10px;
+    font-size: 0.8em;
+    height: 3em;
+    padding: 0.5em;
   }
 
   /* *** KLASSER *** */
@@ -519,5 +520,8 @@ button {
   #to-do {
     grid-column: 1;
     grid-row: 1;
+    div {
+      display: block;
+    }
   }
 }
