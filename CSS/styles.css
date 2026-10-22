@@ -533,5 +533,37 @@ button {
   /* Sektion med formuläret */
   #form-section {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    img {
+      display: block;
+      margin: 6vw;
+    }
+  }
+
+  .contact-form {
+    div {
+      margin-top: 1vw;
+    }
+    label {
+      font-size: clamp(1rem, 1vw, 1.1rem);
+      color: var(--darktext);
+    }
+    input,
+    textarea {
+      font-size: clamp(1rem, 1vw, 1.1rem);
+      padding: 1vw;
+    }
+    p {
+      font-size: inherit;
+      margin: 1vw;
+    }
+  }
+
+  .round-pic {
+    width: 20vw;
+    margin: 0;
+    margin: 0 2vw 0 2vw;
+    justify-self: center;
   }
 }
