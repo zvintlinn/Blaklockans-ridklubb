@@ -489,11 +489,31 @@ button {
   /* Grid för main */
   #grid {
     display: grid;
-    grid-template-columns: 2fr 0.8fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    justify-self: center;
+  }
+
+  #map {
+    grid-column: 2;
+    img {
+      max-height: 100%;
+      width: 30vw;
+      padding: 0;
+    }
   }
 
   #weather {
     display: block;
+  }
+
+  #temp {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  #to-do {
+    grid-column: 1;
+    grid-row: 1;
   }
 }
