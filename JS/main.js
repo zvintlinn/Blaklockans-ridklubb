@@ -14,3 +14,19 @@ function showNav() {
 }
 
 menuButton.addEventListener("click", showNav);
+
+//FREQUENTLY ASKED QUESTIONS
+
+const question = document.querySelectorAll(".question");
+
+for (let i = 0; i < question.length; i++) {
+  question[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let active = this.nextElementSibling;
+    if (active.style.display === "block") {
+      active.style.display = "none";
+    } else {
+      active.style.display = "block";
+    }
+  });
+}
