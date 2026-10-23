@@ -30,3 +30,17 @@ for (let i = 0; i < question.length; i++) {
     }
   });
 }
+
+// LISTA MED HÄSTAR
+
+const horses = document.querySelector("#horses");
+
+async function horseCard() {
+  try {
+    const resp = await fetch("hastar.json");
+
+    const data = await resp.json();
+  } catch (error) {}
+}
+
+// horseCard();
