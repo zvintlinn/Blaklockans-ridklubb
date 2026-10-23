@@ -1,0 +1,17 @@
+{
+  "name": "Tea",
+  "img": "images/horses/tea.jpg",
+  "gender:": "mare",
+  "age": "10",
+  "breed": "svensk ridponny",
+  "about": "Tea kan vara sur i boxen när det är mycket rörelse i stallet.",
+  "hay": ["3", "3"],
+  "oats": ["true", "false"],
+  "grain": ["false", "false"],
+  "blanket": {
+    "rain": "true",
+    "plus": "false",
+    "minus": "false"
+  },
+  "pasture": "1"
+}
