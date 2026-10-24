@@ -35,12 +35,34 @@ for (let i = 0; i < question.length; i++) {
 
 const horses = document.querySelector("#horses");
 
-async function horseCard() {
+async function getHorseCard() {
   try {
     const resp = await fetch("hastar.json");
 
     const data = await resp.json();
-  } catch (error) {}
+
+    console.log(data);
+    console.log("hej");
+
+    displayHorseCard(data);
+  } catch (error) {
+    console.log("hejdå");
+  }
 }
 
-// horseCard();
+function displayHorseCard(data) {
+  const horseDivEl = document.createElement("div");
+  const horseImgEl = document.createElement("img");
+  const horseNameEl = document.createElement("p");
+
+  horseImgEl.src = data[0].img.src;
+  horseImgEl.alt = data[0].img.alt;
+
+  horseNameEl.textContent = "Tea";
+
+  horseDivEl.appendChild(horseImgEl);
+  horseDivEl.appendChild(horseNameEl);
+  horses.appendChild(horseDivEl);
+}
+
+getHorseCard();
