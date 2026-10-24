@@ -35,14 +35,12 @@ for (let i = 0; i < question.length; i++) {
 
 const horses = document.querySelector("#horses");
 
+// Hämtar data om hästar från json-fil
 async function getHorseCard() {
   try {
     const resp = await fetch("hastar.json");
 
     const data = await resp.json();
-
-    console.log(data);
-    console.log("hej");
 
     displayHorseCard(data);
   } catch (error) {
@@ -50,7 +48,15 @@ async function getHorseCard() {
   }
 }
 
+function filterHorses(data) {
+  const filter = document.querySelector("#filter");
+  if (filter.value === "gelding") {
+    console.log("valack");
+  }
+}
+
 function displayHorseCard(data) {
+  filterHorses(data);
   data.forEach((horse) => {
     const horseDivEl = document.createElement("div");
     const horseImgEl = document.createElement("img");
@@ -58,7 +64,6 @@ function displayHorseCard(data) {
 
     horseImgEl.src = horse.img.src;
     horseImgEl.alt = horse.img.alt;
-    console.log(horseImgEl);
 
     horseNameEl.textContent = horse.name;
 
@@ -69,3 +74,5 @@ function displayHorseCard(data) {
 }
 
 getHorseCard();
+
+filter.addEventListener("input", getHorseCard);
