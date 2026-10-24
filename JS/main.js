@@ -34,29 +34,35 @@ for (let i = 0; i < question.length; i++) {
 // LISTA MED HÄSTAR
 
 const horses = document.querySelector("#horses");
+// Skapar variabel till arrayen
+let allHorseCards = [];
 
 // Hämtar data om hästar från json-fil
 async function getHorseCard() {
   try {
     const resp = await fetch("hastar.json");
 
-    const data = await resp.json();
+    allHorseCards = await resp.json();
 
-    displayHorseCard(data);
+    filterHorses(allHorseCards);
+    displayHorseCard(allHorseCards);
   } catch (error) {
-    console.log("hejdå");
+    console.error(error.message);
   }
 }
 
 function filterHorses(data) {
   const filter = document.querySelector("#filter");
   if (filter.value === "gelding") {
-    console.log("valack");
+    data.filter((horse) => {
+      return horse.gender === "gelding";
+    });
   }
 }
 
 function displayHorseCard(data) {
-  filterHorses(data);
+  console.log(allHorseCards);
+
   data.forEach((horse) => {
     const horseDivEl = document.createElement("div");
     const horseImgEl = document.createElement("img");
