@@ -4,16 +4,313 @@
     "img": { "src": "images/horses/tea.jpg", "alt": "en brun ponny med bläs" },
     "gender:": "mare",
     "age": "10",
-    "breed": "svensk ridponny",
+    "breed": "Svensk ridponny",
     "about": "Tea kan vara sur i boxen när det är mycket rörelse i stallet.",
     "hay": { "morning": "3", "night": "3" },
-    "oats": { "morning": true, "night": false },
-    "grain": { "morning": false, "night": false },
+    "oats": { "morning": "true", "night": "false" },
+    "grain": { "morning": "false", "night": "false" },
+    "blanket": {
+      "rain": "true",
+      "plus": "false",
+      "minus": "true"
+    },
+    "pasture": "1"
+  },
+  {
+    "name": "Prins",
+    "img": { "src": "images/horses/prins.jpg", "alt": "en brun häst i snön" },
+    "gender:": "gelding",
+    "age": "15",
+    "breed": "Kallblodstravare",
+    "about": "Prins är stor men väldigt snäll. Kan hanteras av alla, även oerfarna.",
+    "hay": { "morning": "4", "night": "5" },
+    "oats": { "morning": "false", "night": "false" },
+    "grain": { "morning": "false", "night": "false" },
     "blanket": {
       "rain": "true",
       "plus": "false",
       "minus": "false"
     },
+    "pasture": "2"
+  },
+  {
+    "name": "Pascall",
+    "img": {
+      "src": "images/horses/pascall.jpg",
+      "alt": "en skäckfärgad häst med långa öron"
+    },
+    "gender:": "gelding",
+    "age": "5",
+    "breed": "Korsningshäst",
+    "about": "Pascall är väldigt snäll men eftersom han är ung kan han bli stressad av att lämnas ensam.",
+    "hay": { "morning": "3", "night": "4,5" },
+    "oats": { "morning": "true", "night": "false" },
+    "grain": { "morning": "false", "night": "true" },
+    "blanket": {
+      "rain": "true",
+      "plus": "true",
+      "minus": "false"
+    },
+    "pasture": "3"
+  },
+  {
+    "name": "Donna",
+    "img": {
+      "src": "images/horses/donna.jpg",
+      "alt": "en fuxfärgad häst med bläs"
+    },
+    "gender:": "mare",
+    "age": "17",
+    "breed": "Svenskt halvblod",
+    "about": "Donna saknar ett öga på höger sida. Prata lite extra med henne så hon inte blir skrämd när ni kommer.",
+    "hay": { "morning": "2", "night": "4" },
+    "oats": { "morning": "false", "night": "false" },
+    "grain": { "morning": "true", "night": "true" },
+    "blanket": {
+      "rain": "false",
+      "plus": "false",
+      "minus": "true"
+    },
+    "pasture": "4"
+  },
+  {
+    "name": "Musse",
+    "img": {
+      "src": "images/horses/musse.jpg",
+      "alt": "skimmelfärgad häst med lång man"
+    },
+    "gender:": "gelding",
+    "age": "9",
+    "breed": "Lusitano",
+    "about": "Musse vill ha så mycket lugn och ro som möjligt, var inte stressad kring honom i stallet.",
+    "hay": { "morning": "3,5", "night": "4" },
+    "oats": { "morning": "true", "night": "true" },
+    "grain": { "morning": "true", "night": "false" },
+    "blanket": {
+      "rain": "true",
+      "plus": "true",
+      "minus": "false"
+    },
+    "pasture": "5"
+  },
+  {
+    "name": "Brasse",
+    "img": {
+      "src": "images/horses/brasse.jpg",
+      "alt": "gul häst med lång mörk man"
+    },
+    "gender:": "gelding",
+    "age": "6",
+    "breed": "Welsh cob",
+    "about": "Brasse är en unghäst som kan vara lite busig ibland. Bör hanteras tillsammans med en vuxen.",
+    "hay": { "morning": "3", "night": "3" },
+    "oats": { "morning": "false", "night": "true" },
+    "grain": { "morning": "false", "night": "false" },
+    "blanket": {
+      "rain": "true",
+      "plus": "false",
+      "minus": "true"
+    },
+    "pasture": "3"
+  },
+  {
+    "name": "Charmy",
+    "img": {
+      "src": "images/horses/charmy.jpg",
+      "alt": "brun häst med bläs och fläta i pannluggen"
+    },
+    "gender:": "mare",
+    "age": "14",
+    "breed": "Svensk ridponny",
+    "about": "Charmy tycker om att mysa och vill gärna bli kliad i pannan.",
+    "hay": { "morning": "3", "night": "4" },
+    "oats": { "morning": "true", "night": "false" },
+    "grain": { "morning": "true", "night": "false" },
+    "blanket": {
+      "rain": "false",
+      "plus": "true",
+      "minus": "false"
+    },
+    "pasture": "6"
+  },
+  {
+    "name": "Eddie",
+    "img": {
+      "src": "images/horses/eddie.jpg",
+      "alt": "brun häst med kort bäls"
+    },
+    "gender:": "gelding",
+    "age": "19",
+    "breed": "Svensk ridponny",
+    "about": "Eddie är en äldre ponny som även de minsta barnen kan pyssla om.",
+    "hay": { "morning": "4", "night": "4" },
+    "oats": { "morning": "true", "night": "true" },
+    "grain": { "morning": "false", "night": "true" },
+    "blanket": {
+      "rain": "true",
+      "plus": "true",
+      "minus": "true"
+    },
     "pasture": "1"
+  },
+  {
+    "name": "Henrietta",
+    "img": {
+      "src": "images/horses/henrietta.jpg",
+      "alt": "rödskäck med halvt vitt huvud"
+    },
+    "gender:": "mare",
+    "age": "16",
+    "breed": "Irländsk ridponny",
+    "about": "Henrietta kan vara väldigt pigg vid utsläpp på morgonen.",
+    "hay": { "morning": "3", "night": "3,5" },
+    "oats": { "morning": "false", "night": "true" },
+    "grain": { "morning": "true", "night": "false" },
+    "blanket": {
+      "rain": "true",
+      "plus": "true",
+      "minus": "false"
+    },
+    "pasture": "2"
+  },
+  {
+    "name": "Kava",
+    "img": {
+      "src": "images/horses/kava.jpg",
+      "alt": "brun häst med vita tecken"
+    },
+    "gender:": "mare",
+    "age": "7",
+    "breed": "Svenskt halvblod",
+    "about": "Kava är väldigt snäll men kan vara lite försiktig.",
+    "hay": { "morning": "3,5", "night": "3,5" },
+    "oats": { "morning": "true", "night": "true" },
+    "grain": { "morning": "true", "night": "false" },
+    "blanket": {
+      "rain": "true",
+      "plus": "true",
+      "minus": "true"
+    },
+    "pasture": "3"
+  },
+  {
+    "name": "Kerrie",
+    "img": {
+      "src": "images/horses/kerrie.jpg",
+      "alt": "brun häst med smal bläs"
+    },
+    "gender:": "mare",
+    "age": "12",
+    "breed": "Svenskt halvblod",
+    "about": "Kerrie vill alltid stå på stallgången vid sadling då hon kan känna sig lite trängd i boxen.",
+    "hay": { "morning": "4", "night": "4" },
+    "oats": { "morning": "false", "night": "true" },
+    "grain": { "morning": "false", "night": "true" },
+    "blanket": {
+      "rain": "false",
+      "plus": "true",
+      "minus": "false"
+    },
+    "pasture": "4"
+  },
+  {
+    "name": "Lukas",
+    "img": {
+      "src": "images/horses/lukas.jpg",
+      "alt": "svart ponny med helt vit panna"
+    },
+    "gender:": "gelding",
+    "age": "20",
+    "breed": "Shetlandsponny",
+    "about": "Lukas är liten och gammal men kan gärna busa lite i hanteringen.",
+    "hay": { "morning": "1,5", "night": "2" },
+    "oats": { "morning": "true", "night": "true" },
+    "grain": { "morning": "true", "night": "true" },
+    "blanket": {
+      "rain": "false",
+      "plus": "false",
+      "minus": "true"
+    },
+    "pasture": "2"
+  },
+  {
+    "name": "Meia",
+    "img": {
+      "src": "images/horses/meia.jpg",
+      "alt": "fuxfärgad häst med lång ljus man och bläs"
+    },
+    "gender:": "mare",
+    "age": "15",
+    "breed": "Welsh cob",
+    "about": "Meia är väldigt snäll och trots att hon är stor kan de yngsta barnen leda och sköta henne.",
+    "hay": { "morning": "4", "night": "4,5" },
+    "oats": { "morning": "false", "night": "true" },
+    "grain": { "morning": "true", "night": "true" },
+    "blanket": {
+      "rain": "true",
+      "plus": "false",
+      "minus": "true"
+    },
+    "pasture": "6"
+  },
+  {
+    "name": "Pegasus",
+    "img": {
+      "src": "images/horses/pegasus.jpg",
+      "alt": "fuxfärgad häst med bläs"
+    },
+    "gender:": "gelding",
+    "age": "8",
+    "breed": "Svensk ridponny",
+    "about": "Pegasus vill inte gå sist ut i hagen.",
+    "hay": { "morning": "3", "night": "3" },
+    "oats": { "morning": "true", "night": "true" },
+    "grain": { "morning": "true", "night": "false" },
+    "blanket": {
+      "rain": "true",
+      "plus": "true",
+      "minus": "false"
+    },
+    "pasture": "1"
+  },
+  {
+    "name": "Sunny",
+    "img": {
+      "src": "images/horses/sunny.jpg",
+      "alt": "brun ponny med stjärn"
+    },
+    "gender:": "gelding",
+    "age": "12",
+    "breed": "Svensk ridponny",
+    "about": "Sunny kan vissa dagar vara väldigt envis att tränsa.",
+    "hay": { "morning": "2,5", "night": "3,5" },
+    "oats": { "morning": "false", "night": "true" },
+    "grain": { "morning": "true", "night": "true" },
+    "blanket": {
+      "rain": "true",
+      "plus": "false",
+      "minus": "true"
+    },
+    "pasture": "2"
+  },
+  {
+    "name": "Tingeling",
+    "img": {
+      "src": "images/horses/tingeling.jpg",
+      "alt": "skimmelfärgad ponny som sträcker ut tungan"
+    },
+    "gender:": "mare",
+    "age": "13",
+    "breed": "Korsningsponny",
+    "about": "Tingeling älskar godis lite för mycket och kan lätt få ont i magen. Hon har därför godisförbud.",
+    "hay": { "morning": "2", "night": "2,5" },
+    "oats": { "morning": "false", "night": "true" },
+    "grain": { "morning": "true", "night": "false" },
+    "blanket": {
+      "rain": "true",
+      "plus": "false",
+      "minus": "false"
+    },
+    "pasture": "4"
   }
 ]
