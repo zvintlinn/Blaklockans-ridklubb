@@ -1,14 +1,14 @@
 [
   {
     "name": "Tea",
-    "img": "images/horses/tea.jpg",
+    "img": { "src": "images/horses/tea.jpg", "alt": "en brun ponny med bläs" },
     "gender:": "mare",
     "age": "10",
     "breed": "svensk ridponny",
     "about": "Tea kan vara sur i boxen när det är mycket rörelse i stallet.",
-    "hay": ["3", "3"],
-    "oats": ["true", "false"],
-    "grain": ["false", "false"],
+    "hay": { "morning": "3", "night": "3" },
+    "oats": { "morning": true, "night": false },
+    "grain": { "morning": false, "night": false },
     "blanket": {
       "rain": "true",
       "plus": "false",
