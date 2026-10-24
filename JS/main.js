@@ -51,18 +51,21 @@ async function getHorseCard() {
 }
 
 function displayHorseCard(data) {
-  const horseDivEl = document.createElement("div");
-  const horseImgEl = document.createElement("img");
-  const horseNameEl = document.createElement("p");
+  data.forEach((horse) => {
+    const horseDivEl = document.createElement("div");
+    const horseImgEl = document.createElement("img");
+    const horseNameEl = document.createElement("p");
 
-  horseImgEl.src = data[0].img.src;
-  horseImgEl.alt = data[0].img.alt;
+    horseImgEl.src = horse.img.src;
+    horseImgEl.alt = horse.img.alt;
+    console.log(horseImgEl);
 
-  horseNameEl.textContent = "Tea";
+    horseNameEl.textContent = horse.name;
 
-  horseDivEl.appendChild(horseImgEl);
-  horseDivEl.appendChild(horseNameEl);
-  horses.appendChild(horseDivEl);
+    horseDivEl.appendChild(horseImgEl);
+    horseDivEl.appendChild(horseNameEl);
+    horses.appendChild(horseDivEl);
+  });
 }
 
 getHorseCard();
