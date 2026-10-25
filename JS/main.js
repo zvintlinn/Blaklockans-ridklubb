@@ -1,6 +1,6 @@
 "use strict";
 
-// MOBILMENY
+// ----------------------------------------------MOBILMENY----------------------------------------------------
 
 const menuButton = document.querySelector("#menu");
 const nav = document.querySelector("#nav");
@@ -31,43 +31,74 @@ for (let i = 0; i < question.length; i++) {
   });
 }
 
-// LISTA MED HÄSTAR
+// --------------------------------------------LISTA MED HÄSTAR------------------------------------------------
 
-const horses = document.querySelector("#horses");
-// Skapar variabel till arrayen
+// Skapar variabel till array i json-fil
 let allHorseCards = [];
 
+//Globala variabler
+const horses = document.querySelector("#horses");
 const filterSelect = document.querySelector("#filter");
 
 // Hämtar data om hästar från json-fil
 async function getHorseCard() {
   try {
     const resp = await fetch("hastar.json");
+    if (!resp.ok) throw new Error("Hästar kunde inte hämtas");
 
     // sparar array från fil i globala variabeln
     allHorseCards = await resp.json();
 
+    // kör filterhorses när json laddats in
     filterHorses();
+
+    // Skriver ut ev error med röd text
   } catch (error) {
-    console.error(error.message);
+    horses.innerHTML = error;
+    horses.style.color = "red";
+    horses.style.fontWeight = "600";
+    horses.style.fontSize = "1.3vw";
   }
 }
+
 function filterHorses() {
+  // ny variabel för filtrerad array
   let filteredArray = allHorseCards;
 
-  //   om value = valack
+  // filtrerar array beroende på value i selektorbox
   if (filterSelect.value === "gelding") {
     filteredArray = allHorseCards.filter((horse) => {
       return horse.gender === "Valack";
     });
   }
-  console.log(filteredArray);
+
+  if (filterSelect.value === "mare") {
+    filteredArray = allHorseCards.filter((horse) => {
+      return horse.gender === "Sto";
+    });
+  }
+
+  if (filterSelect.value === "pony") {
+    filteredArray = allHorseCards.filter((horse) => {
+      return horse.breed.includes("ponny");
+    });
+  }
+
+  if (filterSelect.value === "horse") {
+    filteredArray = allHorseCards.filter((horse) => {
+      return !horse.breed.includes("ponny");
+    });
+  }
+
+  // skickar filtrerad array till display horsecard
   displayHorseCard(filteredArray);
 }
 
-function displayHorseCard(data) {
+// skriver ut de hästar som fn. finns i array till DOM
+function displayHorseCard(array) {
   horses.innerHTML = "";
-  data.forEach((horse) => {
+
+  array.forEach((horse) => {
     const horseDivEl = document.createElement("div");
     const horseImgEl = document.createElement("img");
     const horseNameEl = document.createElement("p");
@@ -83,8 +114,10 @@ function displayHorseCard(data) {
   });
 }
 
+// anropar funktion och hämtar hastar.json när sidan laddas in
 getHorseCard();
 
+// eventlyssnare för när input på filtrering får nytt värde
 filterSelect.addEventListener("input", () => {
   filterHorses();
 });
