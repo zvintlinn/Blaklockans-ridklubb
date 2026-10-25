@@ -142,6 +142,7 @@ async function getWeather() {
 
     const data = await resp.json();
     displayWeather(data);
+    displayBlankets(data);
   } catch (error) {
     console.error(error.message);
   }
@@ -196,3 +197,38 @@ function displayWeather(data) {
 }
 
 getWeather();
+
+// --------------------------------------------INFO OM TÄCKEN-------------------------------------------
+
+const blankets = document.querySelector("#blankets");
+
+function blanketsController(data) {
+  let rainYes = allHorseCards.filter((horses) => {
+    return horses.blanket.rain === "true";
+  });
+
+  let plusYes = allHorseCards.filter((horses) => {
+    return horses.blanket.plus === "true";
+  });
+
+  let minusYes = allHorseCards.filter((horses) => {
+    return horses.blanket.minus === "true";
+  });
+
+  if (data.daily.weather_code > 50) {
+    return rainYes;
+  }
+}
+
+function displayBlankets(data) {
+  const blanketsYes = blanketsController(data);
+  console.log(blanketsYes);
+
+  blankets.innerHTML = "";
+
+  const horsePEl = document.createElement("p");
+
+  horsePEl.textContent = blanketsYes;
+
+  blankets.appendChild(horsePEl);
+}
