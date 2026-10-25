@@ -226,9 +226,11 @@ function displayBlankets(data) {
 
   blankets.innerHTML = "";
 
-  const horsePEl = document.createElement("p");
+  blanketsYes.forEach((horse) => {
+    let horsePEl = document.createElement("p");
 
-  horsePEl.textContent = blanketsYes;
+    horsePEl.textContent = horse.name;
 
-  blankets.appendChild(horsePEl);
+    blankets.appendChild(horsePEl);
+  });
 }
