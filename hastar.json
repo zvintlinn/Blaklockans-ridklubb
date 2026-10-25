@@ -10,9 +10,9 @@
     "oats": { "morning": true, "night": false },
     "grain": { "morning": false, "night": false },
     "blanket": {
-      "rain": true,
-      "plus": false,
-      "minus": true
+      "plusrain": true,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "1"
   },
@@ -27,9 +27,9 @@
     "oats": { "morning": false, "night": false },
     "grain": { "morning": false, "night": false },
     "blanket": {
-      "rain": true,
-      "plus": false,
-      "minus": false
+      "plusrain": false,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "2"
   },
@@ -47,9 +47,9 @@
     "oats": { "morning": true, "night": false },
     "grain": { "morning": false, "night": true },
     "blanket": {
-      "rain": false,
-      "plus": true,
-      "minus": false
+      "plusrain": false,
+      "minus": false,
+      "minussnow": true
     },
     "pasture": "3"
   },
@@ -67,9 +67,9 @@
     "oats": { "morning": false, "night": false },
     "grain": { "morning": true, "night": true },
     "blanket": {
-      "rain": false,
-      "plus": false,
-      "minus": true
+      "plusrain": false,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "4"
   },
@@ -87,9 +87,9 @@
     "oats": { "morning": true, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": true,
-      "plus": true,
-      "minus": false
+      "plusrain": false,
+      "minus": false,
+      "minussnow": true
     },
     "pasture": "5"
   },
@@ -107,9 +107,9 @@
     "oats": { "morning": false, "night": true },
     "grain": { "morning": false, "night": false },
     "blanket": {
-      "rain": true,
-      "plus": false,
-      "minus": true
+      "plusrain": true,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "3"
   },
@@ -127,9 +127,9 @@
     "oats": { "morning": true, "night": false },
     "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": false,
-      "plus": true,
-      "minus": false
+      "plusrain": true,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "6"
   },
@@ -147,9 +147,9 @@
     "oats": { "morning": true, "night": true },
     "grain": { "morning": false, "night": true },
     "blanket": {
-      "rain": true,
-      "plus": true,
-      "minus": true
+      "plusrain": false,
+      "minus": false,
+      "minussnow": true
     },
     "pasture": "1"
   },
@@ -167,9 +167,9 @@
     "oats": { "morning": false, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": true,
-      "plus": true,
-      "minus": false
+      "plusrain": false,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "2"
   },
@@ -187,9 +187,9 @@
     "oats": { "morning": true, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": true,
-      "plus": true,
-      "minus": true
+      "plusrain": false,
+      "minus": false,
+      "minussnow": true
     },
     "pasture": "3"
   },
@@ -207,9 +207,9 @@
     "oats": { "morning": false, "night": true },
     "grain": { "morning": false, "night": true },
     "blanket": {
-      "rain": false,
-      "plus": true,
-      "minus": false
+      "plusrain": true,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "4"
   },
@@ -227,9 +227,9 @@
     "oats": { "morning": true, "night": true },
     "grain": { "morning": true, "night": true },
     "blanket": {
-      "rain": false,
-      "plus": false,
-      "minus": true
+      "plusrain": false,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "2"
   },
@@ -247,9 +247,9 @@
     "oats": { "morning": false, "night": true },
     "grain": { "morning": true, "night": true },
     "blanket": {
-      "rain": false,
-      "plus": false,
-      "minus": true
+      "plusrain": false,
+      "minus": false,
+      "minussnow": true
     },
     "pasture": "6"
   },
@@ -267,9 +267,9 @@
     "oats": { "morning": true, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": false,
-      "plus": true,
-      "minus": false
+      "plusrain": true,
+      "minus": true,
+      "minussnow": true
     },
     "pasture": "1"
   },
@@ -287,9 +287,9 @@
     "oats": { "morning": false, "night": true },
     "grain": { "morning": true, "night": true },
     "blanket": {
-      "rain": false,
-      "plus": false,
-      "minus": true
+      "plusrain": false,
+      "minus": false,
+      "minussnow": true
     },
     "pasture": "2"
   },
@@ -307,9 +307,9 @@
     "oats": { "morning": false, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": false,
-      "plus": false,
-      "minus": false
+      "plusrain": false,
+      "minus": false,
+      "minussnow": true
     },
     "pasture": "4"
   }
