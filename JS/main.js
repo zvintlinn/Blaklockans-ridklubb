@@ -54,10 +54,12 @@ async function getHorseCard() {
 
     // Skriver ut ev error med röd text
   } catch (error) {
-    horses.innerHTML = error;
-    horses.style.color = "red";
-    horses.style.fontWeight = "600";
-    horses.style.fontSize = "1.3vw";
+    if (horses) {
+      horses.innerHTML = error;
+      horses.style.color = "red";
+      horses.style.fontWeight = "600";
+      horses.style.fontSize = "1.3vw";
+    }
   }
 }
 
@@ -118,6 +120,50 @@ function displayHorseCard(array) {
 getHorseCard();
 
 // eventlyssnare för när input på filtrering får nytt värde
-filterSelect.addEventListener("input", () => {
-  filterHorses();
-});
+if (filterSelect) {
+  filterSelect.addEventListener("input", () => {
+    filterHorses();
+  });
+}
+
+// ---------------------------------------------VÄDERINFO---------------------------------------------------
+
+let whiteCircleEl = document.querySelector("#temp");
+
+async function getWeather() {
+  try {
+    const resp = await fetch(
+      "https://api.open-meteo.com/v1/forecast?latitude=63.1792&longitude=14.6357&daily=weather_code,temperature_2m_max,temperature_2m_min&current=temperature_2m,weather_code&timezone=Europe%2FBerlin&forecast_days=1",
+    );
+
+    if (!resp.ok) {
+      throw new Error("Kunde inte ladda väderdata");
+    }
+
+    const data = await resp.json();
+    displayWeather(data);
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+function medianTemp(data) {
+  let sum = data.daily.temperature_2m_min[0] + data.daily.temperature_2m_max[0];
+  let median = sum / 2;
+
+  return median;
+}
+
+function displayWeather(data) {
+  const temp = medianTemp(data);
+  console.log(temp);
+
+  // raderar tidigare värde
+  whiteCircleEl.innerHTML = "";
+  let tempEl = document.createElement("p");
+  tempEl.innerHTML = `${data.current.temperature_2m} ${data.current_units.temperature_2m}`;
+
+  whiteCircleEl.appendChild(tempEl);
+}
+
+getWeather();
