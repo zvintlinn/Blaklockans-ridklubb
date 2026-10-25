@@ -182,11 +182,11 @@ function displayWeather(data) {
   let tempEl = document.createElement("p");
 
   iconEl.src = weather;
-  iconEl.style.width = "clamp(15px, 7vw, 100px)";
+  iconEl.style.width = "clamp(15px, 5vw, 80px)";
   iconEl.style.marginTop = "1vw";
 
   tempEl.style.fontWeight = "700";
-  tempEl.style.fontSize = "clamp(0.4rem, 2vw, 2rem";
+  tempEl.style.fontSize = "clamp(0.4rem, 1.5vw, 2rem";
   tempEl.style.color = "var(--darktext)";
   tempEl.style.marginTop = "0.5vw";
 
@@ -203,29 +203,52 @@ getWeather();
 const blankets = document.querySelector("#blankets");
 
 function blanketsController(data) {
-  let rainYes = allHorseCards.filter((horses) => {
-    return horses.blanket.rain === "true";
+  let median = medianTemp(data);
+
+  let plusRain = allHorseCards.filter((horses) => {
+    return horses.blanket.plusrain === true;
   });
 
-  let plusYes = allHorseCards.filter((horses) => {
-    return horses.blanket.plus === "true";
+  let minus = allHorseCards.filter((horses) => {
+    return horses.blanket.minus === true;
   });
 
-  let minusYes = allHorseCards.filter((horses) => {
-    return horses.blanket.minus === "true";
+  let minusSnow = allHorseCards.filter((horses) => {
+    return horses.blanket.minussnow === true;
   });
 
   if (data.daily.weather_code > 50) {
-    return rainYes;
+    return plusRain;
+  }
+
+  if (median < 0) {
+    return minus;
+  }
+
+  if (median < 0 && data.daily.weather_code > 50) {
+    return minusSnow;
   }
 }
 
 function displayBlankets(data) {
-  const blanketsYes = blanketsController(data);
-  console.log(blanketsYes);
+  let blanketsYes = blanketsController(data);
 
   blankets.innerHTML = "";
+  if (blanketsYes == 0) {
+    let horsePEl = document.createElement("p");
 
+    horsePEl.textContent = "Ingen";
+
+    blankets.appendChild(horsePEl);
+  }
+
+  if (blanketsYes == 16) {
+    let horsePEl = document.createElement("p");
+
+    horsePEl.textContent = "Alla";
+
+    blankets.appendChild(horsePEl);
+  }
   blanketsYes.forEach((horse) => {
     let horsePEl = document.createElement("p");
 
