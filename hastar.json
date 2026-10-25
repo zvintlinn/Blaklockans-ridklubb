@@ -2,7 +2,7 @@
   {
     "name": "Tea",
     "img": { "src": "images/horses/tea.jpg", "alt": "en brun ponny med bläs" },
-    "gender:": "mare",
+    "gender:": "Sto",
     "age": "10",
     "breed": "Svensk ridponny",
     "about": "Tea kan vara sur i boxen när det är mycket rörelse i stallet.",
@@ -19,7 +19,7 @@
   {
     "name": "Prins",
     "img": { "src": "images/horses/prins.jpg", "alt": "en brun häst i snön" },
-    "gender:": "gelding",
+    "gender:": "Valack",
     "age": "15",
     "breed": "Kallblodstravare",
     "about": "Prins är stor men väldigt snäll. Kan hanteras av alla, även oerfarna.",
@@ -39,7 +39,7 @@
       "src": "images/horses/pascall.jpg",
       "alt": "en skäckfärgad häst med långa öron"
     },
-    "gender:": "gelding",
+    "gender:": "Valack",
     "age": "5",
     "breed": "Korsningshäst",
     "about": "Pascall är väldigt snäll men eftersom han är ung kan han bli stressad av att lämnas ensam.",
@@ -59,7 +59,7 @@
       "src": "images/horses/donna.jpg",
       "alt": "en fuxfärgad häst med bläs"
     },
-    "gender:": "mare",
+    "gender:": "Sto",
     "age": "17",
     "breed": "Svenskt halvblod",
     "about": "Donna saknar ett öga på höger sida. Prata lite extra med henne så hon inte blir skrämd när ni kommer.",
@@ -79,7 +79,7 @@
       "src": "images/horses/musse.jpg",
       "alt": "skimmelfärgad häst med lång man"
     },
-    "gender:": "gelding",
+    "gender:": "Valack",
     "age": "9",
     "breed": "Lusitano",
     "about": "Musse vill ha så mycket lugn och ro som möjligt, var inte stressad kring honom i stallet.",
@@ -99,7 +99,7 @@
       "src": "images/horses/brasse.jpg",
       "alt": "gul häst med lång mörk man"
     },
-    "gender:": "gelding",
+    "gender:": "Valack",
     "age": "6",
     "breed": "Welsh cob",
     "about": "Brasse är en unghäst som kan vara lite busig ibland. Bör hanteras tillsammans med en vuxen.",
@@ -119,7 +119,7 @@
       "src": "images/horses/charmy.jpg",
       "alt": "brun häst med bläs och fläta i pannluggen"
     },
-    "gender:": "mare",
+    "gender:": "Sto",
     "age": "14",
     "breed": "Svensk ridponny",
     "about": "Charmy tycker om att mysa och vill gärna bli kliad i pannan.",
@@ -139,7 +139,7 @@
       "src": "images/horses/eddie.jpg",
       "alt": "brun häst med kort bäls"
     },
-    "gender:": "gelding",
+    "gender:": "Valack",
     "age": "19",
     "breed": "Svensk ridponny",
     "about": "Eddie är en äldre ponny som även de minsta barnen kan pyssla om.",
@@ -159,7 +159,7 @@
       "src": "images/horses/henrietta.jpg",
       "alt": "rödskäck med halvt vitt huvud"
     },
-    "gender:": "mare",
+    "gender:": "Sto",
     "age": "16",
     "breed": "Irländsk ridponny",
     "about": "Henrietta kan vara väldigt pigg vid utsläpp på morgonen.",
@@ -179,7 +179,7 @@
       "src": "images/horses/kava.jpg",
       "alt": "brun häst med vita tecken"
     },
-    "gender:": "mare",
+    "gender:": "Sto",
     "age": "7",
     "breed": "Svenskt halvblod",
     "about": "Kava är väldigt snäll men kan vara lite försiktig.",
@@ -199,7 +199,7 @@
       "src": "images/horses/kerrie.jpg",
       "alt": "brun häst med smal bläs"
     },
-    "gender:": "mare",
+    "gender:": "Sto",
     "age": "12",
     "breed": "Svenskt halvblod",
     "about": "Kerrie vill alltid stå på stallgången vid sadling då hon kan känna sig lite trängd i boxen.",
@@ -219,7 +219,7 @@
       "src": "images/horses/lukas.jpg",
       "alt": "svart ponny med helt vit panna"
     },
-    "gender:": "gelding",
+    "gender:": "Valack",
     "age": "20",
     "breed": "Shetlandsponny",
     "about": "Lukas är liten och gammal men kan gärna busa lite i hanteringen.",
@@ -239,7 +239,7 @@
       "src": "images/horses/meia.jpg",
       "alt": "fuxfärgad häst med lång ljus man och bläs"
     },
-    "gender:": "mare",
+    "gender:": "Sto",
     "age": "15",
     "breed": "Welsh cob",
     "about": "Meia är väldigt snäll och trots att hon är stor kan de yngsta barnen leda och sköta henne.",
@@ -259,7 +259,7 @@
       "src": "images/horses/pegasus.jpg",
       "alt": "fuxfärgad häst med bläs"
     },
-    "gender:": "gelding",
+    "gender:": "Valack",
     "age": "8",
     "breed": "Svensk ridponny",
     "about": "Pegasus vill inte gå sist ut i hagen.",
@@ -279,7 +279,7 @@
       "src": "images/horses/sunny.jpg",
       "alt": "brun ponny med stjärn"
     },
-    "gender:": "gelding",
+    "gender:": "Valack",
     "age": "12",
     "breed": "Svensk ridponny",
     "about": "Sunny kan vissa dagar vara väldigt envis att tränsa.",
@@ -299,7 +299,7 @@
       "src": "images/horses/tingeling.jpg",
       "alt": "skimmelfärgad ponny som sträcker ut tungan"
     },
-    "gender:": "mare",
+    "gender:": "Sto",
     "age": "13",
     "breed": "Korsningsponny",
     "about": "Tingeling älskar godis lite för mycket och kan lätt få ont i magen. Hon har därför godisförbud.",
