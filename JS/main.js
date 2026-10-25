@@ -42,9 +42,9 @@ async function getHorseCard() {
   try {
     const resp = await fetch("hastar.json");
 
+    // sparar array från fil i globala variabeln
     allHorseCards = await resp.json();
 
-    filterHorses(allHorseCards);
     displayHorseCard(allHorseCards);
   } catch (error) {
     console.error(error.message);
@@ -52,17 +52,17 @@ async function getHorseCard() {
 }
 
 function filterHorses(data) {
+  // variabel för selektorboxen
   const filter = document.querySelector("#filter");
+  //   om value = valack
   if (filter.value === "gelding") {
-    data.filter((horse) => {
-      return horse.gender === "gelding";
-    });
+    console.log("valack");
   }
+  console.log(data);
 }
 
 function displayHorseCard(data) {
-  console.log(allHorseCards);
-
+  filterHorses(allHorseCards);
   data.forEach((horse) => {
     const horseDivEl = document.createElement("div");
     const horseImgEl = document.createElement("img");
