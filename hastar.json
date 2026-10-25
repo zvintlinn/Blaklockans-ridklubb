@@ -7,12 +7,12 @@
     "breed": "Svensk ridponny",
     "about": "Tea kan vara sur i boxen när det är mycket rörelse i stallet.",
     "hay": { "morning": "3", "night": "3" },
-    "oats": { "morning": "true", "night": "false" },
-    "grain": { "morning": "false", "night": "false" },
+    "oats": { "morning": true, "night": false },
+    "grain": { "morning": false, "night": false },
     "blanket": {
-      "rain": "true",
-      "plus": "false",
-      "minus": "true"
+      "rain": true,
+      "plus": false,
+      "minus": true
     },
     "pasture": "1"
   },
@@ -24,12 +24,12 @@
     "breed": "Kallblodstravare",
     "about": "Prins är stor men väldigt snäll. Kan hanteras av alla, även oerfarna.",
     "hay": { "morning": "4", "night": "5" },
-    "oats": { "morning": "false", "night": "false" },
-    "grain": { "morning": "false", "night": "false" },
+    "oats": { "morning": false, "night": false },
+    "grain": { "morning": false, "night": false },
     "blanket": {
-      "rain": "true",
-      "plus": "false",
-      "minus": "false"
+      "rain": true,
+      "plus": false,
+      "minus": false
     },
     "pasture": "2"
   },
@@ -44,12 +44,12 @@
     "breed": "Korsningshäst",
     "about": "Pascall är väldigt snäll men eftersom han är ung kan han bli stressad av att lämnas ensam.",
     "hay": { "morning": "3", "night": "4,5" },
-    "oats": { "morning": "true", "night": "false" },
-    "grain": { "morning": "false", "night": "true" },
+    "oats": { "morning": true, "night": false },
+    "grain": { "morning": false, "night": true },
     "blanket": {
-      "rain": "false",
-      "plus": "true",
-      "minus": "false"
+      "rain": false,
+      "plus": true,
+      "minus": false
     },
     "pasture": "3"
   },
@@ -64,12 +64,12 @@
     "breed": "Svenskt halvblod",
     "about": "Donna saknar ett öga på höger sida. Prata lite extra med henne så hon inte blir skrämd när ni kommer.",
     "hay": { "morning": "2", "night": "4" },
-    "oats": { "morning": "false", "night": "false" },
-    "grain": { "morning": "true", "night": "true" },
+    "oats": { "morning": false, "night": false },
+    "grain": { "morning": true, "night": true },
     "blanket": {
-      "rain": "false",
-      "plus": "false",
-      "minus": "true"
+      "rain": false,
+      "plus": false,
+      "minus": true
     },
     "pasture": "4"
   },
@@ -84,12 +84,12 @@
     "breed": "Lusitano",
     "about": "Musse vill ha så mycket lugn och ro som möjligt, var inte stressad kring honom i stallet.",
     "hay": { "morning": "3,5", "night": "4" },
-    "oats": { "morning": "true", "night": "true" },
-    "grain": { "morning": "true", "night": "false" },
+    "oats": { "morning": true, "night": true },
+    "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": "true",
-      "plus": "true",
-      "minus": "false"
+      "rain": true,
+      "plus": true,
+      "minus": false
     },
     "pasture": "5"
   },
@@ -104,12 +104,12 @@
     "breed": "Welsh cob",
     "about": "Brasse är en unghäst som kan vara lite busig ibland. Bör hanteras tillsammans med en vuxen.",
     "hay": { "morning": "3", "night": "3" },
-    "oats": { "morning": "false", "night": "true" },
-    "grain": { "morning": "false", "night": "false" },
+    "oats": { "morning": false, "night": true },
+    "grain": { "morning": false, "night": false },
     "blanket": {
-      "rain": "true",
-      "plus": "false",
-      "minus": "true"
+      "rain": true,
+      "plus": false,
+      "minus": true
     },
     "pasture": "3"
   },
@@ -124,12 +124,12 @@
     "breed": "Svensk ridponny",
     "about": "Charmy tycker om att mysa och vill gärna bli kliad i pannan.",
     "hay": { "morning": "3", "night": "4" },
-    "oats": { "morning": "true", "night": "false" },
-    "grain": { "morning": "true", "night": "false" },
+    "oats": { "morning": true, "night": false },
+    "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": "false",
-      "plus": "true",
-      "minus": "false"
+      "rain": false,
+      "plus": true,
+      "minus": false
     },
     "pasture": "6"
   },
@@ -144,12 +144,12 @@
     "breed": "Svensk ridponny",
     "about": "Eddie är en äldre ponny som även de minsta barnen kan pyssla om.",
     "hay": { "morning": "4", "night": "4" },
-    "oats": { "morning": "true", "night": "true" },
-    "grain": { "morning": "false", "night": "true" },
+    "oats": { "morning": true, "night": true },
+    "grain": { "morning": false, "night": true },
     "blanket": {
-      "rain": "true",
-      "plus": "true",
-      "minus": "true"
+      "rain": true,
+      "plus": true,
+      "minus": true
     },
     "pasture": "1"
   },
@@ -164,12 +164,12 @@
     "breed": "Irländsk ridponny",
     "about": "Henrietta kan vara väldigt pigg vid utsläpp på morgonen.",
     "hay": { "morning": "3", "night": "3,5" },
-    "oats": { "morning": "false", "night": "true" },
-    "grain": { "morning": "true", "night": "false" },
+    "oats": { "morning": false, "night": true },
+    "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": "true",
-      "plus": "true",
-      "minus": "false"
+      "rain": true,
+      "plus": true,
+      "minus": false
     },
     "pasture": "2"
   },
@@ -184,12 +184,12 @@
     "breed": "Svenskt halvblod",
     "about": "Kava är väldigt snäll men kan vara lite försiktig.",
     "hay": { "morning": "3,5", "night": "3,5" },
-    "oats": { "morning": "true", "night": "true" },
-    "grain": { "morning": "true", "night": "false" },
+    "oats": { "morning": true, "night": true },
+    "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": "true",
-      "plus": "true",
-      "minus": "true"
+      "rain": true,
+      "plus": true,
+      "minus": true
     },
     "pasture": "3"
   },
@@ -204,12 +204,12 @@
     "breed": "Svenskt halvblod",
     "about": "Kerrie vill alltid stå på stallgången vid sadling då hon kan känna sig lite trängd i boxen.",
     "hay": { "morning": "4", "night": "4" },
-    "oats": { "morning": "false", "night": "true" },
-    "grain": { "morning": "false", "night": "true" },
+    "oats": { "morning": false, "night": true },
+    "grain": { "morning": false, "night": true },
     "blanket": {
-      "rain": "false",
-      "plus": "true",
-      "minus": "false"
+      "rain": false,
+      "plus": true,
+      "minus": false
     },
     "pasture": "4"
   },
@@ -224,12 +224,12 @@
     "breed": "Shetlandsponny",
     "about": "Lukas är liten och gammal men kan gärna busa lite i hanteringen.",
     "hay": { "morning": "1,5", "night": "2" },
-    "oats": { "morning": "true", "night": "true" },
-    "grain": { "morning": "true", "night": "true" },
+    "oats": { "morning": true, "night": true },
+    "grain": { "morning": true, "night": true },
     "blanket": {
-      "rain": "false",
-      "plus": "false",
-      "minus": "true"
+      "rain": false,
+      "plus": false,
+      "minus": true
     },
     "pasture": "2"
   },
@@ -244,12 +244,12 @@
     "breed": "Welsh cob",
     "about": "Meia är väldigt snäll och trots att hon är stor kan de yngsta barnen leda och sköta henne.",
     "hay": { "morning": "4", "night": "4,5" },
-    "oats": { "morning": "false", "night": "true" },
-    "grain": { "morning": "true", "night": "true" },
+    "oats": { "morning": false, "night": true },
+    "grain": { "morning": true, "night": true },
     "blanket": {
-      "rain": "false",
-      "plus": "false",
-      "minus": "true"
+      "rain": false,
+      "plus": false,
+      "minus": true
     },
     "pasture": "6"
   },
@@ -264,12 +264,12 @@
     "breed": "Svensk ridponny",
     "about": "Pegasus vill inte gå sist ut i hagen.",
     "hay": { "morning": "3", "night": "3" },
-    "oats": { "morning": "true", "night": "true" },
-    "grain": { "morning": "true", "night": "false" },
+    "oats": { "morning": true, "night": true },
+    "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": "false",
-      "plus": "true",
-      "minus": "false"
+      "rain": false,
+      "plus": true,
+      "minus": false
     },
     "pasture": "1"
   },
@@ -284,12 +284,12 @@
     "breed": "Svensk ridponny",
     "about": "Sunny kan vissa dagar vara väldigt envis att tränsa.",
     "hay": { "morning": "2,5", "night": "3,5" },
-    "oats": { "morning": "false", "night": "true" },
-    "grain": { "morning": "true", "night": "true" },
+    "oats": { "morning": false, "night": true },
+    "grain": { "morning": true, "night": true },
     "blanket": {
-      "rain": "false",
-      "plus": "false",
-      "minus": "true"
+      "rain": false,
+      "plus": false,
+      "minus": true
     },
     "pasture": "2"
   },
@@ -304,12 +304,12 @@
     "breed": "Korsningsponny",
     "about": "Tingeling älskar godis lite för mycket och kan lätt få ont i magen. Hon har därför godisförbud.",
     "hay": { "morning": "2", "night": "2,5" },
-    "oats": { "morning": "false", "night": "true" },
-    "grain": { "morning": "true", "night": "false" },
+    "oats": { "morning": false, "night": true },
+    "grain": { "morning": true, "night": false },
     "blanket": {
-      "rain": "false",
-      "plus": "false",
-      "minus": "false"
+      "rain": false,
+      "plus": false,
+      "minus": false
     },
     "pasture": "4"
   }
