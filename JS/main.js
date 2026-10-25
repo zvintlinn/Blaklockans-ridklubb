@@ -154,14 +154,44 @@ function medianTemp(data) {
   return median;
 }
 
+function weatherType(data) {
+  if (data.daily.weather_code < 2) {
+    return "images/svg/sol.svg";
+  } else if (data.daily.weather_code < 4) {
+    return "images/svg/solmoln.svg";
+  } else if (data.daily.weather_code < 63) {
+    return "images/svg/solregn.svg";
+  } else if (data.daily.weather_code < 68) {
+    return "images/svg/regn.svg";
+  } else if (data.daily.weather_code < 95) {
+    return "images/svg/snow.svg";
+  } else if (data.daily.weather_code < 100) {
+    return "images/svg/thunder.svg";
+  }
+}
+
 function displayWeather(data) {
   const temp = medianTemp(data);
+  const weather = weatherType(data);
 
   // raderar tidigare värde
   whiteCircleEl.innerHTML = "";
+
+  let iconEl = document.createElement("img");
   let tempEl = document.createElement("p");
+
+  iconEl.src = weather;
+  iconEl.style.width = "clamp(15px, 7vw, 100px)";
+  iconEl.style.marginTop = "1vw";
+
+  tempEl.style.fontWeight = "700";
+  tempEl.style.fontSize = "clamp(0.4rem, 2vw, 2rem";
+  tempEl.style.color = "var(--darktext)";
+  tempEl.style.marginTop = "0.5vw";
+
   tempEl.innerHTML = `${temp} ${data.current_units.temperature_2m}`;
 
+  whiteCircleEl.appendChild(iconEl);
   whiteCircleEl.appendChild(tempEl);
 }
 
