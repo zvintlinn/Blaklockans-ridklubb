@@ -598,7 +598,7 @@ button {
   #weather {
     display: block;
     h2 {
-      font-size: clamp(0.6rem, 1.5vw, 2rem);
+      font-size: clamp(0.6rem, 1.3vw, 2rem);
     }
   }
 
