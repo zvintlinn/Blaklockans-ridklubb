@@ -128,8 +128,10 @@ if (filterSelect) {
 
 // ---------------------------------------------VÄDERINFO---------------------------------------------------
 
+// Cirkel-div som ska visa väder
 let whiteCircleEl = document.querySelector("#temp");
 
+// Hämtar väder från API
 async function getWeather() {
   try {
     const resp = await fetch(
@@ -141,13 +143,18 @@ async function getWeather() {
     }
 
     const data = await resp.json();
+
+    // skriver ut väder till vit div
     displayWeather(data);
+
+    // skriver ut vilka hästar som ska ha täcke
     displayBlankets(data);
   } catch (error) {
     console.error(error.message);
   }
 }
 
+// räknar ut median av dagens max och min-temp
 function medianTemp(data) {
   let sum = data.daily.temperature_2m_min[0] + data.daily.temperature_2m_max[0];
   let median = sum / 2;
@@ -155,6 +162,7 @@ function medianTemp(data) {
   return median;
 }
 
+// hämtar rätt ikon beroende på vädertyp
 function weatherType(data) {
   if (data.daily.weather_code < 2) {
     return "images/svg/sol.svg";
@@ -171,25 +179,27 @@ function weatherType(data) {
   }
 }
 
+// skriver ut väderdata till dom
 function displayWeather(data) {
+  // hämtar temp som kommer visas
   const temp = medianTemp(data);
+
+  //   hämtar ikon som kommer visas
   const weather = weatherType(data);
 
   // raderar tidigare värde
   whiteCircleEl.innerHTML = "";
 
   let iconEl = document.createElement("img");
-  let tempEl = document.createElement("p");
-
   iconEl.src = weather;
   iconEl.style.width = "clamp(15px, 5vw, 80px)";
   iconEl.style.marginTop = "1vw";
 
+  let tempEl = document.createElement("p");
   tempEl.style.fontWeight = "700";
   tempEl.style.fontSize = "clamp(0.4rem, 1.5vw, 2rem";
   tempEl.style.color = "var(--darktext)";
   tempEl.style.marginTop = "0.5vw";
-
   tempEl.innerHTML = `${temp} ${data.current_units.temperature_2m}`;
 
   whiteCircleEl.appendChild(iconEl);
@@ -200,11 +210,15 @@ getWeather();
 
 // --------------------------------------------INFO OM TÄCKEN-------------------------------------------
 
+// väljer div där namn ska skrivas
 const blankets = document.querySelector("#blankets");
 
+// funktion som kontrollerar vilka som ska ha täcke
 function blanketsController(data) {
+  // hämtar in dagens temperatur
   let median = medianTemp(data);
 
+  //   de tre filtreringarna som kan användas
   let plusRain = allHorseCards.filter((horses) => {
     return horses.blanket.plusrain === true;
   });
@@ -217,6 +231,7 @@ function blanketsController(data) {
     return horses.blanket.minussnow === true;
   });
 
+  //   If-sats som avgör vilken filtrering som ska användas
   if (data.daily.weather_code > 50) {
     return plusRain;
   }
@@ -230,10 +245,15 @@ function blanketsController(data) {
   }
 }
 
+// Skriver ut namn till DOM från filtrerad array
 function displayBlankets(data) {
+  // lagrar filtrerad array i variabel
   let blanketsYes = blanketsController(data);
 
+  //   återställer så det inte blir dubletter
   blankets.innerHTML = "";
+
+  //   två if som sker om arrayen är tom eller om alla hästar är med
   if (blanketsYes == 0) {
     let horsePEl = document.createElement("p");
 
@@ -249,6 +269,8 @@ function displayBlankets(data) {
 
     blankets.appendChild(horsePEl);
   }
+
+  //   skriver ut array om antal är mellan 0 och 16
   blanketsYes.forEach((horse) => {
     let horsePEl = document.createElement("p");
 
