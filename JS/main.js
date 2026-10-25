@@ -156,12 +156,11 @@ function medianTemp(data) {
 
 function displayWeather(data) {
   const temp = medianTemp(data);
-  console.log(temp);
 
   // raderar tidigare värde
   whiteCircleEl.innerHTML = "";
   let tempEl = document.createElement("p");
-  tempEl.innerHTML = `${data.current.temperature_2m} ${data.current_units.temperature_2m}`;
+  tempEl.innerHTML = `${temp} ${data.current_units.temperature_2m}`;
 
   whiteCircleEl.appendChild(tempEl);
 }
