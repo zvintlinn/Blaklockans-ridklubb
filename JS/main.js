@@ -37,6 +37,8 @@ const horses = document.querySelector("#horses");
 // Skapar variabel till arrayen
 let allHorseCards = [];
 
+const filterSelect = document.querySelector("#filter");
+
 // Hämtar data om hästar från json-fil
 async function getHorseCard() {
   try {
@@ -45,24 +47,26 @@ async function getHorseCard() {
     // sparar array från fil i globala variabeln
     allHorseCards = await resp.json();
 
-    displayHorseCard(allHorseCards);
+    filterHorses();
   } catch (error) {
     console.error(error.message);
   }
 }
+function filterHorses() {
+  let filteredArray = allHorseCards;
 
-function filterHorses(data) {
-  // variabel för selektorboxen
-  const filter = document.querySelector("#filter");
   //   om value = valack
-  if (filter.value === "gelding") {
-    console.log("valack");
+  if (filterSelect.value === "gelding") {
+    filteredArray = allHorseCards.filter((horse) => {
+      return horse.gender === "Valack";
+    });
   }
-  console.log(data);
+  console.log(filteredArray);
+  displayHorseCard(filteredArray);
 }
 
 function displayHorseCard(data) {
-  filterHorses(allHorseCards);
+  horses.innerHTML = "";
   data.forEach((horse) => {
     const horseDivEl = document.createElement("div");
     const horseImgEl = document.createElement("img");
@@ -81,4 +85,6 @@ function displayHorseCard(data) {
 
 getHorseCard();
 
-filter.addEventListener("input", getHorseCard);
+filterSelect.addEventListener("input", () => {
+  filterHorses();
+});
