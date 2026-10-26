@@ -298,6 +298,7 @@ let choreArray = [
 let doneArray = [];
 
 function toDo(array) {
+  undoneEl.innerHTML = "";
   array.forEach((chore) => {
     let choreEl = document.createElement("button");
 
@@ -318,7 +319,28 @@ function toDo(array) {
 
 function doneChores(chore) {
   doneArray.push(chore);
-  console.log(doneArray);
+  choreArray = choreArray.filter((input) => {
+    return input !== chore;
+  });
+
+  toDo(choreArray);
+  displayDone(doneArray);
+}
+
+function displayDone(array) {
+  doneEl.innerHTML = "";
+
+  array.forEach((chore) => {
+    let choreEl = document.createElement("button");
+    choreEl.style.backgroundColor = "#487f37";
+    choreEl.style.color = "#ffffff";
+    choreEl.style.width = "10vw";
+    choreEl.style.fontSize = "clamp(0.5rem, 1vw, 1.5rem";
+    choreEl.style.display = "block";
+    choreEl.innerHTML = chore;
+
+    doneEl.appendChild(choreEl);
+  });
 }
 
 toDo(choreArray);
