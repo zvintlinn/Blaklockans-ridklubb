@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="JS/main.js" defer></script>
+    <script src="JS/contact.js" defer></script>
   </head>
   <body>
     <!-- HEADER M. NAVIGERING -->
@@ -53,69 +54,75 @@
       </section>
 
       <!-- Sektion för formulär -->
-      <section id="form-section" class="beige-div">
-        <form id="contact-form" class="contact-form">
+      <section class="beige-div">
+        <div id="form-section">
+          <form id="contact-form" class="contact-form">
+            <div>
+              <label for="first-name">Förnamn:</label
+              ><input type="text" id="first-name" />
+            </div>
+            <div>
+              <label for="surname">Efternamn:</label
+              ><input type="text" id="surname" />
+            </div>
+            <div>
+              <label for="age">Ålder:</label><input type="number" id="age" />
+            </div>
+            <div>
+              <label for="email">E-post:</label
+              ><input type="email" id="email" />
+            </div>
+            <div>
+              <label for="phone">Telefon:</label
+              ><input type="tel" id="phone" maxlength="10" />
+            </div>
+            <div id="exp">
+              <p>Ridvana:</p>
+              <label
+                ><input
+                  type="radio"
+                  name="exp"
+                  value="amateur"
+                  checked
+                />Nybörjare</label
+              >
+              <label
+                ><input type="radio" name="exp" value="one-two" />1-2 år</label
+              >
+              <label
+                ><input type="radio" name="exp" value="three-four" />3-4
+                år</label
+              >
+              <label
+                ><input type="radio" name="exp" value="five-plus" />5+ år</label
+              >
+            </div>
+            <div>
+              <label for="message">Meddelande:</label
+              ><textarea
+                rows="4"
+                cols="30"
+                maxlength="150"
+                id="message"
+              ></textarea>
+            </div>
+            <div class="button-right">
+              <button type="submit" id="submit">Skicka</button>
+            </div>
+          </form>
           <div>
-            <label for="first-name">Förnamn:</label
-            ><input type="text" id="first-name" />
+            <img
+              src="images/annie.jpg"
+              alt="brun häst på äng"
+              class="round-pic"
+            /><img
+              src="images/ridning.jpg"
+              alt="tjej galopperar på skäckfärgad häst"
+              class="round-pic"
+            />
           </div>
-
-          <div>
-            <label for="surname">Efternamn:</label
-            ><input type="text" id="surname" />
-          </div>
-
-          <div>
-            <label for="age">Ålder:</label><input type="number" id="age" />
-          </div>
-
-          <div>
-            <label for="email">E-post:</label><input type="email" id="email" />
-          </div>
-
-          <div>
-            <label for="phone">Telefon:</label><input type="tel" id="phone" />
-          </div>
-
-          <div id="exp">
-            <p>Ridvana:</p>
-            <label
-              ><input type="radio" name="exp" value="amateur" />Nybörjare</label
-            >
-            <label
-              ><input type="radio" name="exp" value="one-two" />1-2 år</label
-            >
-            <label
-              ><input type="radio" name="exp" value="three-four" />3-4 år</label
-            >
-            <label
-              ><input type="radio" name="exp" value="five-plus" />5+ år</label
-            >
-          </div>
-
-          <div>
-            <label for="message">Meddelande:</label
-            ><textarea
-              rows="4"
-              cols="30"
-              maxlength="150"
-              id="message"
-            ></textarea>
-          </div>
-
-          <div class="button-right"><button type="submit">Skicka</button></div>
-        </form>
-        <div>
-          <img
-            src="images/annie.jpg"
-            alt="brun häst på äng"
-            class="round-pic"
-          /><img
-            src="images/ridning.jpg"
-            alt="tjej galopperar på skäckfärgad häst"
-            class="round-pic"
-          />
         </div>
+        <ul id="error-list"></ul>
       </section>
     </main>
     <footer>
