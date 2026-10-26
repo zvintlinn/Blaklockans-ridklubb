@@ -159,7 +159,7 @@ function medianTemp(data) {
   let sum = data.daily.temperature_2m_min[0] + data.daily.temperature_2m_max[0];
   let median = sum / 2;
 
-  return median;
+  return median.toFixed(1);
 }
 
 // hämtar rätt ikon beroende på vädertyp
@@ -279,3 +279,46 @@ function displayBlankets(data) {
     blankets.appendChild(horsePEl);
   });
 }
+
+// ---------------------------------------------ATT GÖRA--------------------------------------------
+
+const undoneEl = document.querySelector("#undone");
+const doneEl = document.querySelector("#done");
+
+let choreArray = [
+  "Släppa ut hästarna",
+  "Fodra hästarna",
+  "Mocka boxarna",
+  "Fylla vattenkar",
+  "Sopa stallgången",
+  "Packa höpåsar",
+  "Ta in hästarna",
+];
+
+let doneArray = [];
+
+function toDo(array) {
+  array.forEach((chore) => {
+    let choreEl = document.createElement("button");
+
+    choreEl.style.backgroundColor = "#ccc";
+    choreEl.style.color = "var(--darktext)";
+    choreEl.style.width = "10vw";
+    choreEl.style.fontSize = "clamp(0.5rem, 1vw, 1.5rem";
+    choreEl.style.display = "block";
+    choreEl.innerHTML = chore;
+
+    undoneEl.appendChild(choreEl);
+
+    choreEl.addEventListener("click", () => {
+      doneChores(chore);
+    });
+  });
+}
+
+function doneChores(chore) {
+  doneArray.push(chore);
+  console.log(doneArray);
+}
+
+toDo(choreArray);
