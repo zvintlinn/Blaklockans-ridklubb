@@ -284,6 +284,7 @@ function displayBlankets(data) {
 
 const undoneEl = document.querySelector("#undone");
 const doneEl = document.querySelector("#done");
+const startOverBtn = document.querySelector("#start-over");
 
 let choreArray = [
   "Släppa ut hästarna",
@@ -343,4 +344,23 @@ function displayDone(array) {
   });
 }
 
+function restoreArray() {
+  choreArray = [
+    "Släppa ut hästarna",
+    "Fodra hästarna",
+    "Mocka boxarna",
+    "Fylla vattenkar",
+    "Sopa stallgången",
+    "Packa höpåsar",
+    "Ta in hästarna",
+  ];
+
+  doneArray = [];
+
+  doneEl.innerHTML = "";
+  toDo(choreArray);
+}
+
 toDo(choreArray);
+
+startOverBtn.addEventListener("click", restoreArray);
