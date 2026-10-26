@@ -420,6 +420,13 @@ button {
     width: 2vw;
   }
 }
+#error-list {
+  list-style: none;
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  font-weight: 500;
+  justify-self: center;
+  text-align: right;
+}
 
 /* ----------------------------------- MEDIA QUERY ----------------------------------------- */
 
@@ -660,9 +667,8 @@ button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 10vw 10vw 10vw;
-    margin: 10vw;
-    margin-top: 2vw;
+    padding: 0 10vw 0 10vw;
+    margin: 2vw 10vw 0 10vw;
     img {
       display: block;
       margin: 0 6vw 6vw 6vw;
