@@ -307,12 +307,10 @@ button {
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 80% 20%;
+    text-align: center;
   }
   button {
-    grid-column: span 2;
-    justify-self: center;
-    align-self: last baseline;
     margin: 0.7vw;
   }
 }
@@ -324,7 +322,28 @@ button {
   flex: 1;
   padding: 1vw;
 }
-
+#start-over {
+  grid-column: span 2;
+  width: 15vw;
+  justify-self: center;
+  align-self: last baseline;
+  margin: 0.7vw;
+  font-size: clamp(0.6rem, 1vw, 1rem);
+}
+.todo-knapp {
+  background-color: #ccc;
+  color: var(--darktext);
+  width: 35vw;
+  font-size: clamp(0.5rem, 1.6vw, 1.5rem);
+  display: block;
+}
+.todo-knapp-klar {
+  background-color: #559b42;
+  color: var(--darktext);
+  width: 20vw;
+  font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+  display: block;
+}
 /* *** KONTAKT *** */
 
 /* Id på hela första sektionen */
@@ -612,6 +631,7 @@ button {
   #to-do {
     grid-column: 1;
     grid-row: 1;
+    text-align: center;
     h2,
     h3 {
       font-size: clamp(0.6rem, 1.5vw, 2rem);
@@ -619,6 +639,15 @@ button {
     div {
       display: block;
     }
+  }
+  .todo-knapp {
+    width: 15vw;
+    font-size: clamp(0.5rem, 1vw, 1.5rem);
+  }
+  .todo-knapp-klar {
+    width: 15vw;
+    font-size: clamp(0.5rem, 1vw, 1.5rem);
+    animation: none;
   }
 
   /* *** KONTAKT *** */
