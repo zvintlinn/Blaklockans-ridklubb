@@ -303,11 +303,7 @@ function toDo(array) {
   array.forEach((chore) => {
     let choreEl = document.createElement("button");
 
-    choreEl.style.backgroundColor = "#ccc";
-    choreEl.style.color = "var(--darktext)";
-    choreEl.style.width = "10vw";
-    choreEl.style.fontSize = "clamp(0.5rem, 1vw, 1.5rem";
-    choreEl.style.display = "block";
+    choreEl.classList.add("todo-knapp");
     choreEl.innerHTML = chore;
 
     undoneEl.appendChild(choreEl);
@@ -333,11 +329,8 @@ function displayDone(array) {
 
   array.forEach((chore) => {
     let choreEl = document.createElement("button");
-    choreEl.style.backgroundColor = "#487f37";
-    choreEl.style.color = "#ffffff";
-    choreEl.style.width = "10vw";
-    choreEl.style.fontSize = "clamp(0.5rem, 1vw, 1.5rem";
-    choreEl.style.display = "block";
+
+    choreEl.classList.add("todo-knapp-klar");
     choreEl.innerHTML = chore;
 
     doneEl.appendChild(choreEl);
