@@ -286,6 +286,7 @@ const undoneEl = document.querySelector("#undone");
 const doneEl = document.querySelector("#done");
 const startOverBtn = document.querySelector("#start-over");
 
+// Array med alla uppgifter
 let choreArray = [
   "Släppa ut hästarna",
   "Fodra hästarna",
@@ -296,8 +297,10 @@ let choreArray = [
   "Ta in hästarna",
 ];
 
+// ny array där utförda uppgifter hamnar
 let doneArray = [];
 
+// Skriver ut array till dom
 function toDo(array) {
   undoneEl.innerHTML = "";
   array.forEach((chore) => {
@@ -308,12 +311,14 @@ function toDo(array) {
 
     undoneEl.appendChild(choreEl);
 
+    // lyssnare för klick på varje knapp
     choreEl.addEventListener("click", () => {
       doneChores(chore);
     });
   });
 }
 
+// lägger utförda uppgifter i ny array och filtrerar den gamla
 function doneChores(chore) {
   doneArray.push(chore);
   choreArray = choreArray.filter((input) => {
@@ -324,6 +329,7 @@ function doneChores(chore) {
   displayDone(doneArray);
 }
 
+// skriver ut utförda till dom
 function displayDone(array) {
   doneEl.innerHTML = "";
 
@@ -337,6 +343,7 @@ function displayDone(array) {
   });
 }
 
+// återställer arrayer
 function restoreArray() {
   choreArray = [
     "Släppa ut hästarna",
@@ -356,4 +363,5 @@ function restoreArray() {
 
 toDo(choreArray);
 
+// lyssnare för knapp börja om
 startOverBtn.addEventListener("click", restoreArray);
