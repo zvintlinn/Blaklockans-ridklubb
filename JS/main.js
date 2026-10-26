@@ -324,6 +324,8 @@ function doneChores(chore) {
   choreArray = choreArray.filter((input) => {
     return input !== chore;
   });
+  console.log(choreArray);
+  console.log(doneArray);
   saveProgress();
 
   toDo(choreArray);
@@ -339,6 +341,7 @@ function saveProgress() {
   localStorage.setItem("done", doneJson);
 }
 
+// laddar tidigare utförda uppgifter
 function loadProgress() {
   const undoneData = localStorage.getItem("undone");
   const doneData = localStorage.getItem("done");
@@ -350,6 +353,8 @@ function loadProgress() {
     restoreArray();
   }
   if (done !== null) {
+    choreArray = undone;
+    doneArray = done;
     toDo(undone);
     displayDone(done);
   }
