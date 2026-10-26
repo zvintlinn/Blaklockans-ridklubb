@@ -92,6 +92,10 @@ button {
   p {
     font-size: 2vw;
   }
+  button:hover {
+    animation: scale 1s forwards;
+    cursor: pointer;
+  }
 }
 
 /* Alla runda bilder */
@@ -338,7 +342,7 @@ button {
   display: block;
 }
 .todo-knapp-klar {
-  background-color: #559b42;
+  background-color: #73a865;
   color: var(--darktext);
   width: 20vw;
   font-size: clamp(0.5rem, 1.5vw, 1.5rem);
@@ -440,7 +444,6 @@ button {
     padding: 0.5em;
   }
   button:hover {
-    animation: scale 1s forwards;
     cursor: pointer;
   }
 
