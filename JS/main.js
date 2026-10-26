@@ -324,9 +324,35 @@ function doneChores(chore) {
   choreArray = choreArray.filter((input) => {
     return input !== chore;
   });
+  saveProgress();
 
   toDo(choreArray);
   displayDone(doneArray);
+}
+
+// sparar arrayer i local storage
+function saveProgress() {
+  const undoneJson = JSON.stringify(choreArray);
+  const doneJson = JSON.stringify(doneArray);
+
+  localStorage.setItem("undone", undoneJson);
+  localStorage.setItem("done", doneJson);
+}
+
+function loadProgress() {
+  const undoneData = localStorage.getItem("undone");
+  const doneData = localStorage.getItem("done");
+
+  const undone = JSON.parse(undoneData);
+  const done = JSON.parse(doneData);
+
+  if (undone === null) {
+    restoreArray();
+  }
+  if (done !== null) {
+    toDo(undone);
+    displayDone(done);
+  }
 }
 
 // skriver ut utförda till dom
@@ -358,6 +384,8 @@ function restoreArray() {
   doneArray = [];
 
   doneEl.innerHTML = "";
+  localStorage.removeItem("undone");
+  localStorage.removeItem("done");
   toDo(choreArray);
 }
 
@@ -365,3 +393,99 @@ toDo(choreArray);
 
 // lyssnare för knapp börja om
 startOverBtn.addEventListener("click", restoreArray);
+
+document.addEventListener("DOMContentLoaded", loadProgress);
+
+// let array = [1, 2, 3, 4];
+
+// const stringify = JSON.stringify(array);
+
+// const storageItem = localStorage.setItem("arrayName", stringify);
+
+// JSON.parse(storageItem);
+
+// console.log(storageItem);
+
+// const undoneEl = document.querySelector("#undone");
+// const doneEl = document.querySelector("#done");
+// const startOverBtn = document.querySelector("#start-over");
+
+// // Array med alla uppgifter
+// let choreArray = [
+//   "Släppa ut hästarna",
+//   "Fodra hästarna",
+//   "Mocka boxarna",
+//   "Fylla vattenkar",
+//   "Sopa stallgången",
+//   "Packa höpåsar",
+//   "Ta in hästarna",
+// ];
+
+// // ny array där utförda uppgifter hamnar
+// let doneArray = [];
+
+// // Skriver ut array till dom
+// function toDo(array) {
+//   undoneEl.innerHTML = "";
+//   array.forEach((chore) => {
+//     let choreEl = document.createElement("button");
+
+//     choreEl.classList.add("todo-knapp");
+//     choreEl.innerHTML = chore;
+
+//     undoneEl.appendChild(choreEl);
+
+//     // lyssnare för klick på varje knapp
+//     choreEl.addEventListener("click", () => {
+//       doneChores(chore);
+//     });
+//   });
+// }
+
+// // lägger utförda uppgifter i ny array och filtrerar den gamla
+// function doneChores(chore) {
+//   doneArray.push(chore);
+//   choreArray = choreArray.filter((input) => {
+//     return input !== chore;
+//   });
+
+//   toDo(choreArray);
+//   displayDone(doneArray);
+// }
+
+// // skriver ut utförda till dom
+// function displayDone(array) {
+//   doneEl.innerHTML = "";
+
+//   array.forEach((chore) => {
+//     let choreEl = document.createElement("button");
+
+//     choreEl.classList.add("todo-knapp-klar");
+//     choreEl.innerHTML = chore;
+
+//     doneEl.appendChild(choreEl);
+//   });
+// }
+
+// // återställer arrayer
+// function restoreArray() {
+//   choreArray = [
+//     "Släppa ut hästarna",
+//     "Fodra hästarna",
+//     "Mocka boxarna",
+//     "Fylla vattenkar",
+//     "Sopa stallgången",
+//     "Packa höpåsar",
+//     "Ta in hästarna",
+//   ];
+
+//   doneArray = [];
+
+//   doneEl.innerHTML = "";
+//   toDo(choreArray);
+// }
+
+// toDo(choreArray);
+
+// // lyssnare för knapp börja om
+// startOverBtn.addEventListener("click", restoreArray);
