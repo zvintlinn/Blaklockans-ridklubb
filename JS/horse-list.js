@@ -122,69 +122,63 @@ function displayHorseInfo(horse) {
   const ageDiv = document.querySelector("#horse-age");
   const breedDiv = document.querySelector("#breed");
 
-  const genderEl = document.createElement("p");
-  const ageEl = document.createElement("p");
-  const breedEl = document.createElement("p");
+  const genderP = genderDiv.querySelector("p");
+  const ageP = ageDiv.querySelector("p");
+  const breedP = breedDiv.querySelector("p");
 
-  genderEl.textContent = horse.gender;
-  ageEl.textContent = `${horse.age} år`;
-  breedEl.textContent = horse.breed;
-
-  genderDiv.appendChild(genderEl);
-  ageDiv.appendChild(ageEl);
-  breedDiv.appendChild(breedEl);
+  genderP.textContent = horse.gender;
+  ageP.textContent = `${horse.age} år`;
+  breedP.textContent = horse.breed;
 
   //   Bra att veta om hästen
   const aboutDiv = document.querySelector("#about");
 
-  const aboutEl = document.createElement("p");
+  const aboutP = aboutDiv.querySelector("p");
+  console.log(aboutP);
 
-  aboutEl.textContent = horse.about;
-
-  aboutDiv.appendChild(aboutEl);
+  aboutP.textContent = horse.about;
 
   //   Tabell för foder
   const morningTr = document.querySelector("#morning");
   const nightTr = document.querySelector("#night");
 
-  const moHayEl = document.createElement("td");
-  const niHayEl = document.createElement("td");
-  const moOatEl = document.createElement("td");
-  const niOatEl = document.createElement("td");
-  const moGrainEl = document.createElement("td");
-  const niGrainEl = document.createElement("td");
+  const moHayTd = morningTr.querySelector(".hay");
+  const niHayTd = nightTr.querySelector(".hay");
+
+  const moOatsTd = morningTr.querySelector(".oats");
+  const niOatsTd = nightTr.querySelector(".oats");
+
+  const moGrainTd = morningTr.querySelector(".grain");
+  const niGrainTd = nightTr.querySelector(".grain");
 
   //   Hö
-  moHayEl.textContent = `${horse.hay.morning} kg`;
-  niHayEl.textContent = `${horse.hay.night} kg`;
+  moHayTd.textContent = `${horse.hay.morning} kg`;
+  niHayTd.textContent = `${horse.hay.night} kg`;
 
   //   Havre
   if (horse.oats.morning === true) {
-    moOatEl.textContent = "Ja";
+    moOatsTd.textContent = "Ja";
   } else {
-    moOatEl.textContent = "Nej";
+    moOatsTd.textContent = "Nej";
   }
 
   if (horse.oats.night === true) {
-    niOatEl.textContent = "Ja";
+    niOatsTd.textContent = "Ja";
   } else {
-    niOatEl.textContent = "Nej";
+    niOatsTd.textContent = "Nej";
   }
 
   //   Korn
   if (horse.grain.morning === true) {
-    moGrainEl.textContent = "Ja";
+    moGrainTd.textContent = "Ja";
   } else {
-    moGrainEl.textContent = "Nej";
+    moGrainTd.textContent = "Nej";
   }
   if (horse.grain.night === true) {
-    niGrainEl.textContent = "Ja";
+    niGrainTd.textContent = "Ja";
   } else {
-    niGrainEl.textContent = "Nej";
+    niGrainTd.textContent = "Nej";
   }
-
-  morningTr.append(moHayEl, moOatEl, moGrainEl);
-  nightTr.append(niHayEl, niOatEl, niGrainEl);
 
   dialog.show();
   console.log(horse);
