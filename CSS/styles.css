@@ -278,15 +278,17 @@ button {
 #dialog {
   width: 70%;
   border: 0.5px solid;
+  text-align: center;
+
   & > div:first-child {
-    display: flex;
     align-items: center;
     border: 1px solid;
   }
   img {
-    width: 10%;
+    width: 30%;
+    justify-items: center;
     border-radius: 20px;
-    margin: 2vw 2vw 2vw 2vw;
+    margin: 2vw 2vw 0 2vw;
     flex: 1;
   }
   h3 {
@@ -299,6 +301,7 @@ button {
 
 #div1El {
   flex: 3;
+  position: relative;
   > div {
     display: flex;
     justify-content: space-around;
@@ -308,6 +311,13 @@ button {
     text-align: center;
     font-size: clamp(1rem, 3vw, 3rem);
     margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  h3 {
+    font-size: clamp(0.4rem, 1.5vw, 1.8rem);
+  }
+  p {
+    font-size: clamp(0.4rem, 1.5vw, 1.3rem);
   }
 }
 #div2El {
@@ -327,6 +337,8 @@ button {
 .tables {
   border-collapse: collapse;
   color: var(--darktext);
+  height: 2.5vw;
+  margin: 2vw;
   th {
     border: 1px solid #000000;
     width: 5vw;
@@ -334,11 +346,13 @@ button {
     background-color: var(--darkbutton);
     color: #ffffff;
     font-weight: 500;
+    font-size: clamp(0.5rem, 1.2vw, 1.2rem);
   }
   td {
     border: 1px solid;
     height: 2.5vw;
     text-align: center;
+    font-size: clamp(0.5rem, 1.2vw, 1.2rem);
   }
 }
 
@@ -354,14 +368,37 @@ button {
 
 #div2El {
   margin: 2vw;
+  display: block;
+  justify-items: center;
   caption {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.5rem, 1.7vw, 1.5rem);
     font-weight: 700;
     color: var(--darktext);
     margin-bottom: 1vw;
   }
 }
-
+#close {
+  background-color: transparent;
+  position: absolute;
+  top: -30vw;
+  right: 1.5vw;
+  img {
+    width: 5vw;
+    cursor: pointer;
+    margin: 0;
+  }
+}
+#close:focus-visible {
+  outline: #000000;
+}
+#pasture {
+  text-align: center;
+  margin: 2vw;
+  h3 {
+    margin-top: 0;
+    font-size: clamp(0.5rem, 1.7vw, 1.5rem);
+  }
+}
 /* *** STALLINFO *** */
 
 /* Karta över hagar */
@@ -682,6 +719,33 @@ button {
     }
   }
 
+  #dialog {
+    & > div:first-child {
+      display: flex;
+    }
+    img {
+      width: 10%;
+      border-radius: 20px;
+      margin: 2vw 2vw 2vw 2vw;
+      flex: 1;
+    }
+  }
+  #div2El {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #close {
+    background-color: transparent;
+    position: absolute;
+    top: 0vw;
+    right: 1vw;
+    img {
+      width: 3vw;
+      cursor: pointer;
+      margin: 0;
+    }
+  }
   /* *** STALLINFO *** */
 
   /* Grid för main */
