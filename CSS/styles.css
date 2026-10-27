@@ -275,6 +275,21 @@ button {
   }
 }
 
+#dialog {
+  width: 70%;
+  border: 0.5px solid;
+}
+#div1El {
+  border: 1px solid;
+}
+#div2El {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tables {
+  border: 1px solid;
+}
+
 /* *** STALLINFO *** */
 
 /* Karta över hagar */
