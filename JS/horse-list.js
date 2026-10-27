@@ -76,6 +76,8 @@ function displayHorseCard(array) {
 
     horseImgEl.src = horse.img.src;
     horseImgEl.alt = horse.img.alt;
+    horseImgEl.tabIndex = "0";
+    horseImgEl.role = "button";
     horseImgEl.style.cursor = "pointer";
 
     horseNameEl.textContent = horse.name;
@@ -86,6 +88,12 @@ function displayHorseCard(array) {
 
     horseImgEl.addEventListener("click", () => {
       displayHorseInfo(horse);
+    });
+    horseImgEl.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        displayHorseInfo(horse);
+      }
     });
   });
 }
@@ -217,5 +225,18 @@ function displayHorseInfo(horse) {
   } else {
     pastureP.textContent = "Grindhagen";
   }
-  dialog.show();
+  dialog.showModal();
 }
+
+const closeBtn = document.querySelector("#close");
+const closeX = closeBtn.querySelector("img");
+
+closeX.addEventListener("click", () => {
+  dialog.close();
+});
+
+closeX.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    dialog.close();
+  }
+});
