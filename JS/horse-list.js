@@ -134,7 +134,6 @@ function displayHorseInfo(horse) {
   const aboutDiv = document.querySelector("#about");
 
   const aboutP = aboutDiv.querySelector("p");
-  console.log(aboutP);
 
   aboutP.textContent = horse.about;
 
@@ -180,6 +179,43 @@ function displayHorseInfo(horse) {
     niGrainTd.textContent = "Nej";
   }
 
+  //   Tabell för täcken
+
+  const rain = document.querySelector("#rain");
+  const minus = document.querySelector("#minus");
+  const minusSnow = document.querySelector("#minus-snow");
+
+  if (horse.blanket.plusrain === true) {
+    rain.textContent = "Ja";
+    minus.textContent = "Ja";
+    minusSnow.textContent = "Ja";
+  } else if (horse.blanket.minus === true) {
+    rain.textContent = "";
+    minus.textContent = "Ja";
+    minusSnow.textContent = "Ja";
+  } else {
+    rain.textContent = "";
+    minus.textContent = "";
+    minusSnow.textContent = "Ja";
+  }
+
+  //   Hage
+
+  const pasture = document.querySelector("#pasture");
+  const pastureP = pasture.querySelector("p");
+
+  if (horse.pasture === 1) {
+    pastureP.textContent = "Gräshagen";
+  } else if (horse.pasture === 2) {
+    pastureP.textContent = "Kullen";
+  } else if (horse.pasture === 3) {
+    pastureP.textContent = "Sandhagen";
+  } else if (horse.pasture === 4) {
+    pastureP.textContent = "Skogshagen";
+  } else if (horse.pasture === 5) {
+    pastureP.textContent = "Ängen";
+  } else {
+    pastureP.textContent = "Grindhagen";
+  }
   dialog.show();
-  console.log(horse);
 }
