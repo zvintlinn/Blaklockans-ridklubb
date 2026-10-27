@@ -76,12 +76,17 @@ function displayHorseCard(array) {
 
     horseImgEl.src = horse.img.src;
     horseImgEl.alt = horse.img.alt;
+    horseImgEl.style.cursor = "pointer";
 
     horseNameEl.textContent = horse.name;
 
     horseDivEl.appendChild(horseImgEl);
     horseDivEl.appendChild(horseNameEl);
     horses.appendChild(horseDivEl);
+
+    horseImgEl.addEventListener("click", () => {
+      displayHorseInfo(horse);
+    });
   });
 }
 
@@ -93,4 +98,17 @@ if (filterSelect) {
   filterSelect.addEventListener("input", () => {
     filterHorses();
   });
+}
+
+// -----------------------------DIALOG HÄSTINFO------------------------
+
+const dialog = document.querySelector("#dialog");
+
+function displayHorseInfo(horse) {
+  const div1El = document.querySelector("#div1El");
+  const horseName = div1El.querySelector("h2");
+  console.log(horse);
+
+  horseName.textContent = horse.name;
+  dialog.show();
 }
