@@ -325,17 +325,29 @@ button {
   }
 }
 .tables {
+  border-collapse: collapse;
+  color: var(--darktext);
   th {
-    border: 1px solid;
+    border: 1px solid #000000;
     width: 5vw;
     height: 2.5vw;
+    background-color: var(--darkbutton);
+    color: #ffffff;
+    font-weight: 500;
   }
   td {
     border: 1px solid;
     height: 2.5vw;
+    text-align: center;
   }
 }
 
+#morning,
+#night {
+  td:first-child {
+    font-weight: 600;
+  }
+}
 .general-info {
   text-align: center;
 }
