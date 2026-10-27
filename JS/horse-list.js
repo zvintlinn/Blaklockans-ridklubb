@@ -106,9 +106,34 @@ const dialog = document.querySelector("#dialog");
 
 function displayHorseInfo(horse) {
   const div1El = document.querySelector("#div1El");
+
   const horseName = div1El.querySelector("h2");
-  console.log(horse);
+  const image = dialog.querySelector("img");
+  const genderDiv = document.querySelector("#gender");
+  const ageDiv = document.querySelector("#horse-age");
+  const breedDiv = document.querySelector("#breed");
+  const aboutDiv = document.querySelector("#about");
+
+  image.src = horse.img.src;
+  image.alt = horse.img.alt;
 
   horseName.textContent = horse.name;
+
+  const genderEl = document.createElement("p");
+  const ageEl = document.createElement("p");
+  const breedEl = document.createElement("p");
+  const aboutEl = document.createElement("p");
+
+  genderEl.textContent = horse.gender;
+  ageEl.textContent = `${horse.age} år`;
+  breedEl.textContent = horse.breed;
+  aboutEl.textContent = horse.about;
+
+  genderDiv.appendChild(genderEl);
+  ageDiv.appendChild(ageEl);
+  breedDiv.appendChild(breedEl);
+  aboutDiv.appendChild(aboutEl);
+
   dialog.show();
+  console.log(horse);
 }
