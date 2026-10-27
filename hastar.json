@@ -14,7 +14,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "1"
+    "pasture": 1
   },
   {
     "name": "Prins",
@@ -31,7 +31,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "2"
+    "pasture": 2
   },
   {
     "name": "Pascall",
@@ -51,7 +51,7 @@
       "minus": false,
       "minussnow": true
     },
-    "pasture": "3"
+    "pasture": 3
   },
   {
     "name": "Donna",
@@ -71,7 +71,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "4"
+    "pasture": 4
   },
   {
     "name": "Musse",
@@ -91,7 +91,7 @@
       "minus": false,
       "minussnow": true
     },
-    "pasture": "5"
+    "pasture": 5
   },
   {
     "name": "Brasse",
@@ -111,7 +111,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "3"
+    "pasture": 3
   },
   {
     "name": "Charmy",
@@ -131,7 +131,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "6"
+    "pasture": 6
   },
   {
     "name": "Eddie",
@@ -151,7 +151,7 @@
       "minus": false,
       "minussnow": true
     },
-    "pasture": "1"
+    "pasture": 1
   },
   {
     "name": "Henrietta",
@@ -171,7 +171,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "2"
+    "pasture": 2
   },
   {
     "name": "Kava",
@@ -191,7 +191,7 @@
       "minus": false,
       "minussnow": true
     },
-    "pasture": "3"
+    "pasture": 3
   },
   {
     "name": "Kerrie",
@@ -211,7 +211,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "4"
+    "pasture": 4
   },
   {
     "name": "Lukas",
@@ -231,7 +231,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "2"
+    "pasture": 2
   },
   {
     "name": "Meia",
@@ -251,7 +251,7 @@
       "minus": false,
       "minussnow": true
     },
-    "pasture": "6"
+    "pasture": 6
   },
   {
     "name": "Pegasus",
@@ -271,7 +271,7 @@
       "minus": true,
       "minussnow": true
     },
-    "pasture": "1"
+    "pasture": 1
   },
   {
     "name": "Sunny",
@@ -291,7 +291,7 @@
       "minus": false,
       "minussnow": true
     },
-    "pasture": "2"
+    "pasture": 2
   },
   {
     "name": "Tingeling",
@@ -311,6 +311,6 @@
       "minus": false,
       "minussnow": true
     },
-    "pasture": "4"
+    "pasture": 4
   }
 ]
