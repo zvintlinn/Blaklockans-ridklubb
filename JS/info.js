@@ -1,7 +1,5 @@
 "use strict";
 
-// ---------------------------------------------VÄDERINFO---------------------------------------------------
-
 let allHorseCards = [];
 
 async function getHorseCard() {
@@ -23,6 +21,77 @@ async function getHorseCard() {
   }
 }
 getHorseCard();
+
+// --------------------------------------------KARTA----------------------------------------------------
+const pastureDi = document.querySelector("#pasture-dialog");
+
+const pasture1 = document.querySelector("#hage1");
+const pasture2 = document.querySelector("#hage2");
+const pasture3 = document.querySelector("#hage3");
+const pasture4 = document.querySelector("#hage4");
+const pasture5 = document.querySelector("#hage5");
+const pasture6 = document.querySelector("#hage6");
+
+const pastureArray = [
+  pasture1,
+  pasture2,
+  pasture3,
+  pasture4,
+  pasture5,
+  pasture6,
+];
+
+pastureArray.forEach((pasture) => {
+  pasture.addEventListener("click", (event) => {
+    event.preventDefault();
+    pastureOpen(pasture);
+  });
+});
+
+function pastureOpen(data) {
+  const horsesDiv = document.querySelector("#pasture-horses");
+  const foodDiv = document.querySelector("#pasture-food");
+
+  horsesDiv.innerHTML = "";
+  foodDiv.innerHTML = "";
+
+  const horsesTitle = document.createElement("h3");
+  const foodTitle = document.createElement("h3");
+
+  horsesTitle.textContent = "I denna hage går:";
+  foodTitle.textContent = "Total mängd hö morgonfodring:";
+
+  horsesDiv.appendChild(horsesTitle);
+  foodDiv.appendChild(foodTitle);
+
+  allHorseCards.forEach((horse) => {
+    if (data.id.includes(horse.pasture)) {
+      const nameP = document.createElement("p");
+      nameP.textContent = horse.name;
+      horsesDiv.appendChild(nameP);
+    }
+  });
+  let sum = 0;
+  allHorseCards.forEach((horse) => {
+    if (data.id.includes(horse.pasture)) {
+      sum = sum + horse.hay.morning;
+    }
+  });
+  const foodP = document.createElement("p");
+
+  foodP.textContent = `${sum} kg`;
+
+  foodDiv.appendChild(foodP);
+
+  pastureDi.showModal();
+}
+
+const closeBtn = document.querySelector("#close");
+
+closeBtn.addEventListener("click", () => {
+  pastureDi.close();
+});
+// ---------------------------------------------VÄDERINFO---------------------------------------------------
 
 // Cirkel-div som ska visa väder
 let whiteCircleEl = document.querySelector("#temp");

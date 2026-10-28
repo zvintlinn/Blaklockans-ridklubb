@@ -403,11 +403,12 @@ button {
 
 /* Karta över hagar */
 #map {
-  padding-top: 1vw;
-  img {
-    border-radius: 20px;
+  svg {
+    padding: 0;
+    height: 100%;
     width: 100%;
-    padding: 0 15vw 0 15vw;
+    margin-top: 2vw;
+    border-radius: 20px;
   }
 }
 
@@ -762,18 +763,30 @@ button {
   /* Kartan lite mindre */
   #map {
     grid-column: 2;
+    align-self: flex-start;
+    padding-top: 1.5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     h1 {
       margin: 0;
       margin-bottom: 1vw;
       font-size: clamp(1rem, 2vw, 2rem);
     }
-    img {
-      max-height: 100%;
-      width: 30vw;
-      padding: 0;
+    p {
+      font-size: clamp(0.9rem, 1.2vw, 1.4rem);
     }
   }
-
+  #hage1,
+  #hage2,
+  #hage3,
+  #hage4,
+  #hage5,
+  #hage6 {
+  }
+  #pasture-dialog {
+    width: 30%;
+    text-align: center;
+  }
   /* Väder/temp ligger under varandra */
   #weather {
     display: block;
