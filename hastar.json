@@ -3,10 +3,10 @@
     "name": "Tea",
     "img": { "src": "images/horses/tea.jpg", "alt": "en brun ponny med bläs" },
     "gender": "Sto",
-    "age": "10",
+    "age": 10,
     "breed": "Svensk ridponny",
     "about": "Tea kan vara sur i boxen när det är mycket rörelse i stallet.",
-    "hay": { "morning": "3", "night": "3" },
+    "hay": { "morning": 3, "night": 3 },
     "oats": { "morning": true, "night": false },
     "grain": { "morning": false, "night": false },
     "blanket": {
@@ -20,10 +20,10 @@
     "name": "Prins",
     "img": { "src": "images/horses/prins.jpg", "alt": "en brun häst i snön" },
     "gender": "Valack",
-    "age": "15",
+    "age": 15,
     "breed": "Kallblodstravare",
     "about": "Prins är stor men väldigt snäll. Kan hanteras av alla, även oerfarna.",
-    "hay": { "morning": "4", "night": "5" },
+    "hay": { "morning": 4, "night": 5 },
     "oats": { "morning": false, "night": false },
     "grain": { "morning": false, "night": false },
     "blanket": {
@@ -40,10 +40,10 @@
       "alt": "en skäckfärgad häst med långa öron"
     },
     "gender": "Valack",
-    "age": "5",
+    "age": 5,
     "breed": "Korsningshäst",
     "about": "Pascall är väldigt snäll men eftersom han är ung kan han bli stressad av att lämnas ensam.",
-    "hay": { "morning": "3", "night": "4,5" },
+    "hay": { "morning": 3, "night": 4.5 },
     "oats": { "morning": true, "night": false },
     "grain": { "morning": false, "night": true },
     "blanket": {
@@ -60,10 +60,10 @@
       "alt": "en fuxfärgad häst med bläs"
     },
     "gender": "Sto",
-    "age": "17",
+    "age": 17,
     "breed": "Svenskt halvblod",
     "about": "Donna saknar ett öga på höger sida. Prata lite extra med henne så hon inte blir skrämd när ni kommer.",
-    "hay": { "morning": "2", "night": "4" },
+    "hay": { "morning": 2, "night": 4 },
     "oats": { "morning": false, "night": false },
     "grain": { "morning": true, "night": true },
     "blanket": {
@@ -80,10 +80,10 @@
       "alt": "skimmelfärgad häst med lång man"
     },
     "gender": "Valack",
-    "age": "9",
+    "age": 9,
     "breed": "Lusitano",
     "about": "Musse vill ha så mycket lugn och ro som möjligt, var inte stressad kring honom i stallet.",
-    "hay": { "morning": "3,5", "night": "4" },
+    "hay": { "morning": 3.5, "night": 4 },
     "oats": { "morning": true, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
@@ -100,10 +100,10 @@
       "alt": "gul häst med lång mörk man"
     },
     "gender": "Valack",
-    "age": "6",
+    "age": 6,
     "breed": "Welsh cob",
     "about": "Brasse är en unghäst som kan vara lite busig ibland. Bör hanteras tillsammans med en vuxen.",
-    "hay": { "morning": "3", "night": "3" },
+    "hay": { "morning": 3, "night": 3 },
     "oats": { "morning": false, "night": true },
     "grain": { "morning": false, "night": false },
     "blanket": {
@@ -120,10 +120,10 @@
       "alt": "brun häst med bläs och fläta i pannluggen"
     },
     "gender": "Sto",
-    "age": "14",
+    "age": 14,
     "breed": "Svensk ridponny",
     "about": "Charmy tycker om att mysa och vill gärna bli kliad i pannan.",
-    "hay": { "morning": "3", "night": "4" },
+    "hay": { "morning": 3, "night": 4 },
     "oats": { "morning": true, "night": false },
     "grain": { "morning": true, "night": false },
     "blanket": {
@@ -140,10 +140,10 @@
       "alt": "brun häst med kort bäls"
     },
     "gender": "Valack",
-    "age": "19",
+    "age": 19,
     "breed": "Svensk ridponny",
     "about": "Eddie är en äldre ponny som även de minsta barnen kan pyssla om.",
-    "hay": { "morning": "4", "night": "4" },
+    "hay": { "morning": 4, "night": 4 },
     "oats": { "morning": true, "night": true },
     "grain": { "morning": false, "night": true },
     "blanket": {
@@ -160,10 +160,10 @@
       "alt": "rödskäck med halvt vitt huvud"
     },
     "gender": "Sto",
-    "age": "16",
+    "age": 16,
     "breed": "Irländsk ridponny",
     "about": "Henrietta kan vara väldigt pigg vid utsläpp på morgonen.",
-    "hay": { "morning": "3", "night": "3,5" },
+    "hay": { "morning": 3, "night": 3.5 },
     "oats": { "morning": false, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
@@ -180,10 +180,10 @@
       "alt": "brun häst med vita tecken"
     },
     "gender": "Sto",
-    "age": "7",
+    "age": 7,
     "breed": "Svenskt halvblod",
     "about": "Kava är väldigt snäll men kan vara lite försiktig.",
-    "hay": { "morning": "3,5", "night": "3,5" },
+    "hay": { "morning": 3.5, "night": 3.5 },
     "oats": { "morning": true, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
@@ -200,10 +200,10 @@
       "alt": "brun häst med smal bläs"
     },
     "gender": "Sto",
-    "age": "12",
+    "age": 12,
     "breed": "Svenskt halvblod",
     "about": "Kerrie vill alltid stå på stallgången vid sadling då hon kan känna sig lite trängd i boxen.",
-    "hay": { "morning": "4", "night": "4" },
+    "hay": { "morning": 4, "night": 4 },
     "oats": { "morning": false, "night": true },
     "grain": { "morning": false, "night": true },
     "blanket": {
@@ -220,10 +220,10 @@
       "alt": "svart ponny med helt vit panna"
     },
     "gender": "Valack",
-    "age": "20",
+    "age": 20,
     "breed": "Shetlandsponny",
     "about": "Lukas är liten och gammal men kan gärna busa lite i hanteringen.",
-    "hay": { "morning": "1,5", "night": "2" },
+    "hay": { "morning": 1.5, "night": 2 },
     "oats": { "morning": true, "night": true },
     "grain": { "morning": true, "night": true },
     "blanket": {
@@ -240,10 +240,10 @@
       "alt": "fuxfärgad häst med lång ljus man och bläs"
     },
     "gender": "Sto",
-    "age": "15",
+    "age": 15,
     "breed": "Welsh cob",
     "about": "Meia är väldigt snäll och trots att hon är stor kan de yngsta barnen leda och sköta henne.",
-    "hay": { "morning": "4", "night": "4,5" },
+    "hay": { "morning": 4, "night": 4.5 },
     "oats": { "morning": false, "night": true },
     "grain": { "morning": true, "night": true },
     "blanket": {
@@ -260,10 +260,10 @@
       "alt": "fuxfärgad häst med bläs"
     },
     "gender": "Valack",
-    "age": "8",
+    "age": 8,
     "breed": "Svensk ridponny",
     "about": "Pegasus vill inte gå sist ut i hagen.",
-    "hay": { "morning": "3", "night": "3" },
+    "hay": { "morning": 3, "night": 3 },
     "oats": { "morning": true, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
@@ -280,10 +280,10 @@
       "alt": "brun ponny med stjärn"
     },
     "gender": "Valack",
-    "age": "12",
+    "age": 12,
     "breed": "Svensk ridponny",
     "about": "Sunny kan vissa dagar vara väldigt envis att tränsa.",
-    "hay": { "morning": "2,5", "night": "3,5" },
+    "hay": { "morning": 2.5, "night": 3.5 },
     "oats": { "morning": false, "night": true },
     "grain": { "morning": true, "night": true },
     "blanket": {
@@ -300,10 +300,10 @@
       "alt": "skimmelfärgad ponny som sträcker ut tungan"
     },
     "gender": "Sto",
-    "age": "13",
+    "age": 13,
     "breed": "Korsningsponny",
     "about": "Tingeling älskar godis lite för mycket och kan lätt få ont i magen. Hon har därför godisförbud.",
-    "hay": { "morning": "2", "night": "2,5" },
+    "hay": { "morning": 2, "night": 2.5 },
     "oats": { "morning": false, "night": true },
     "grain": { "morning": true, "night": false },
     "blanket": {
