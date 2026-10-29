@@ -229,13 +229,12 @@ function displayHorseInfo(horse) {
 }
 
 const closeBtn = document.querySelector("#close");
-const closeX = closeBtn.querySelector("img");
 
-closeX.addEventListener("click", () => {
+closeBtn.addEventListener("click", () => {
   dialog.close();
 });
 
-closeX.addEventListener("keydown", (event) => {
+closeBtn.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     dialog.close();
   }
