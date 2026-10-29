@@ -55,8 +55,8 @@ function pastureOpen(data) {
   horsesDiv.innerHTML = "";
   foodDiv.innerHTML = "";
 
-  const horsesTitle = document.createElement("h3");
-  const foodTitle = document.createElement("h3");
+  const horsesTitle = document.createElement("h2");
+  const foodTitle = document.createElement("h2");
 
   horsesTitle.textContent = "I denna hage går:";
   foodTitle.textContent = "Total mängd hö morgonfodring:";
@@ -84,6 +84,7 @@ function pastureOpen(data) {
   foodDiv.appendChild(foodP);
 
   pastureDi.showModal();
+  pastureDi.focus();
 }
 
 const closeBtn = document.querySelector("#close");
