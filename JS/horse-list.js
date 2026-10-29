@@ -226,6 +226,7 @@ function displayHorseInfo(horse) {
     pastureP.textContent = "Grindhagen";
   }
   dialog.showModal();
+  dialog.focus();
 }
 
 const closeBtn = document.querySelector("#close");

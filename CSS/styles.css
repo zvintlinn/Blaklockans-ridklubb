@@ -79,6 +79,9 @@ button {
   border-radius: 20px;
   margin: 3vw;
   padding: 3vw;
+  h1 {
+    text-align: center;
+  }
 }
 
 /* Fixar mellanrum till hero på index mobil */
@@ -92,7 +95,19 @@ button {
   p {
     font-size: 2vw;
   }
-  button:hover {
+  a {
+    background-color: var(--darkbutton);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 3em;
+    width: 10em;
+    padding: 0.5em;
+    display: inline-block;
+    align-content: center;
+  }
+  a:hover {
     animation: scale 1s forwards;
     cursor: pointer;
   }
@@ -247,9 +262,8 @@ button {
 
 #horses {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-
   div {
     position: relative;
   }
@@ -314,10 +328,10 @@ button {
     margin-top: 5%;
   }
   h3 {
-    font-size: clamp(0.4rem, 1.5vw, 1.8rem);
+    font-size: clamp(0.6rem, 1.5vw, 1.8rem);
   }
   p {
-    font-size: clamp(0.4rem, 1.5vw, 1.3rem);
+    font-size: clamp(0.5rem, 1.5vw, 1.3rem);
   }
 }
 #div2El {
@@ -341,8 +355,8 @@ button {
   margin: 2vw;
   th {
     border: 1px solid #000000;
-    width: 5vw;
-    height: 2.5vw;
+    width: 12vw;
+    height: 5vw;
     background-color: var(--darkbutton);
     color: #ffffff;
     font-weight: 500;
@@ -350,7 +364,7 @@ button {
   }
   td {
     border: 1px solid;
-    height: 2.5vw;
+    height: 5vw;
     text-align: center;
     font-size: clamp(0.5rem, 1.2vw, 1.2rem);
   }
@@ -388,9 +402,6 @@ button {
     margin: 0;
   }
 }
-#close:focus-visible {
-  outline: #000000;
-}
 #pasture {
   text-align: center;
   margin: 2vw;
@@ -409,6 +420,28 @@ button {
     width: 100%;
     margin-top: 2vw;
     border-radius: 20px;
+  }
+}
+
+#pasture-dialog {
+  width: 70%;
+  text-align: center;
+  button {
+    background-color: transparent;
+    position: absolute;
+    top: 1vw;
+    right: 1.5vw;
+    img {
+      width: 4vw;
+      cursor: pointer;
+      margin: 0;
+    }
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 
@@ -571,7 +604,7 @@ button {
     font-size: clamp(0.8rem, 0.8vw, 1rem);
   }
   button {
-    font-size: 0.8em;
+    font-size: clamp(1rem, 1vw, 1.1rem);
     height: 3em;
     padding: 0.5em;
   }
@@ -625,6 +658,16 @@ button {
     grid-template-rows: 0.7fr 1.8fr;
   }
 
+  .tables {
+    th {
+      width: 5vw;
+      height: 2.5vw;
+    }
+    td {
+      height: 2.5vw;
+    }
+  }
+
   /* INDEX */
 
   /* Loggan är centrerad */
@@ -650,6 +693,7 @@ button {
   /* Nav ska visas istället */
   #nav {
     font-weight: 600;
+    font-size: clamp(1rem, 1vw, 1.5rem);
     display: block;
     background-color: unset;
     position: unset;
@@ -720,6 +764,10 @@ button {
     }
   }
 
+  #horses {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   #dialog {
     & > div:first-child {
       display: flex;
@@ -729,6 +777,14 @@ button {
       border-radius: 20px;
       margin: 2vw 2vw 2vw 2vw;
       flex: 1;
+    }
+  }
+  #div1El {
+    h3 {
+      font-size: clamp(0.4rem, 1.5vw, 1.8rem);
+    }
+    p {
+      font-size: clamp(0.4rem, 1.5vw, 1.3rem);
     }
   }
   #div2El {
@@ -776,13 +832,7 @@ button {
       font-size: clamp(0.9rem, 1.2vw, 1.4rem);
     }
   }
-  #hage1,
-  #hage2,
-  #hage3,
-  #hage4,
-  #hage5,
-  #hage6 {
-  }
+
   #pasture-dialog {
     width: 30%;
     text-align: center;
