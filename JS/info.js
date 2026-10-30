@@ -208,6 +208,8 @@ function blanketsController(data) {
 
   if (median < 0 && data.daily.weather_code > 50) {
     return minusSnow;
+  } else {
+    return 0;
   }
 }
 
@@ -236,14 +238,16 @@ function displayBlankets(data) {
     blankets.appendChild(horsePEl);
   }
 
-  //   skriver ut array om antal är mellan 0 och 16
-  blanketsYes.forEach((horse) => {
-    let horsePEl = document.createElement("p");
+  //   skriver ut array om antal är mellan 1 och 15
+  if (blanketsYes > 0 && blanketsYes < 16) {
+    blanketsYes.forEach((horse) => {
+      let horsePEl = document.createElement("p");
 
-    horsePEl.textContent = horse.name;
+      horsePEl.textContent = horse.name;
 
-    blankets.appendChild(horsePEl);
-  });
+      blankets.appendChild(horsePEl);
+    });
+  }
 }
 
 // ---------------------------------------------ATT GÖRA--------------------------------------------
