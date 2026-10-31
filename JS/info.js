@@ -244,6 +244,9 @@ function displayBlankets(data) {
       let horsePEl = document.createElement("p");
 
       horsePEl.textContent = horse.name;
+      horsePEl.style.backgroundColor = "#ffffff";
+      horsePEl.style.fontWeight = "500";
+      horsePEl.style.borderRadius = "10px";
 
       blankets.appendChild(horsePEl);
     });
