@@ -1,7 +1,7 @@
 [
   {
     "name": "Tea",
-    "img": { "src": "images/horses/tea.jpg", "alt": "en brun ponny med bläs" },
+    "img": { "src": "images/horses/tea.webp", "alt": "en brun ponny med bläs" },
     "gender": "Sto",
     "age": 10,
     "breed": "Svensk ridponny",
@@ -18,7 +18,7 @@
   },
   {
     "name": "Prins",
-    "img": { "src": "images/horses/prins.jpg", "alt": "en brun häst i snön" },
+    "img": { "src": "images/horses/prins.webp", "alt": "en brun häst i snön" },
     "gender": "Valack",
     "age": 15,
     "breed": "Kallblodstravare",
@@ -36,7 +36,7 @@
   {
     "name": "Pascall",
     "img": {
-      "src": "images/horses/pascall.jpg",
+      "src": "images/horses/pascall.webp",
       "alt": "en skäckfärgad häst med långa öron"
     },
     "gender": "Valack",
@@ -56,7 +56,7 @@
   {
     "name": "Donna",
     "img": {
-      "src": "images/horses/donna.jpg",
+      "src": "images/horses/donna.webp",
       "alt": "en fuxfärgad häst med bläs"
     },
     "gender": "Sto",
@@ -76,7 +76,7 @@
   {
     "name": "Musse",
     "img": {
-      "src": "images/horses/musse.jpg",
+      "src": "images/horses/musse.webp",
       "alt": "skimmelfärgad häst med lång man"
     },
     "gender": "Valack",
@@ -96,7 +96,7 @@
   {
     "name": "Brasse",
     "img": {
-      "src": "images/horses/brasse.jpg",
+      "src": "images/horses/brasse.webp",
       "alt": "gul häst med lång mörk man"
     },
     "gender": "Valack",
@@ -116,7 +116,7 @@
   {
     "name": "Charmy",
     "img": {
-      "src": "images/horses/charmy.jpg",
+      "src": "images/horses/charmy.webp",
       "alt": "brun häst med bläs och fläta i pannluggen"
     },
     "gender": "Sto",
@@ -136,7 +136,7 @@
   {
     "name": "Eddie",
     "img": {
-      "src": "images/horses/eddie.jpg",
+      "src": "images/horses/eddie.webp",
       "alt": "brun häst med kort bäls"
     },
     "gender": "Valack",
@@ -156,7 +156,7 @@
   {
     "name": "Henrietta",
     "img": {
-      "src": "images/horses/henrietta.jpg",
+      "src": "images/horses/henrietta.webp",
       "alt": "rödskäck med halvt vitt huvud"
     },
     "gender": "Sto",
@@ -176,7 +176,7 @@
   {
     "name": "Kava",
     "img": {
-      "src": "images/horses/kava.jpg",
+      "src": "images/horses/kava.webp",
       "alt": "brun häst med vita tecken"
     },
     "gender": "Sto",
@@ -196,7 +196,7 @@
   {
     "name": "Kerrie",
     "img": {
-      "src": "images/horses/kerrie.jpg",
+      "src": "images/horses/kerrie.webp",
       "alt": "brun häst med smal bläs"
     },
     "gender": "Sto",
@@ -216,7 +216,7 @@
   {
     "name": "Lukas",
     "img": {
-      "src": "images/horses/lukas.jpg",
+      "src": "images/horses/lukas.webp",
       "alt": "svart ponny med helt vit panna"
     },
     "gender": "Valack",
@@ -236,7 +236,7 @@
   {
     "name": "Meia",
     "img": {
-      "src": "images/horses/meia.jpg",
+      "src": "images/horses/meia.webp",
       "alt": "fuxfärgad häst med lång ljus man och bläs"
     },
     "gender": "Sto",
@@ -256,7 +256,7 @@
   {
     "name": "Pegasus",
     "img": {
-      "src": "images/horses/pegasus.jpg",
+      "src": "images/horses/pegasus.webp",
       "alt": "fuxfärgad häst med bläs"
     },
     "gender": "Valack",
@@ -276,7 +276,7 @@
   {
     "name": "Sunny",
     "img": {
-      "src": "images/horses/sunny.jpg",
+      "src": "images/horses/sunny.webp",
       "alt": "brun ponny med stjärn"
     },
     "gender": "Valack",
@@ -296,7 +296,7 @@
   {
     "name": "Tingeling",
     "img": {
-      "src": "images/horses/tingeling.jpg",
+      "src": "images/horses/tingeling.webp",
       "alt": "skimmelfärgad ponny som sträcker ut tungan"
     },
     "gender": "Sto",

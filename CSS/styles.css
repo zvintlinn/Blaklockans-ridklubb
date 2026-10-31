@@ -56,7 +56,7 @@ button {
 
 /* Header till liten skärm */
 .mobile-header {
-  background-image: url(../images/flock.jpg);
+  background-image: url(../images/flock.webp);
   background-size: 100%;
   background-position: center;
   padding: 2vw;
@@ -526,7 +526,7 @@ button {
 
 /* Kontaktinformationen */
 #contact-info {
-  background-image: url(../images/flock-barn.jpg);
+  background-image: url(../images/flock-barn.webp);
   background-color: #ffffffd8;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
