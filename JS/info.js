@@ -230,7 +230,7 @@ function displayBlankets(data) {
     blankets.appendChild(horsePEl);
   }
 
-  if (blanketsYes == 16) {
+  if (blanketsYes.length == 16) {
     let horsePEl = document.createElement("p");
 
     horsePEl.textContent = "Alla";
@@ -239,7 +239,7 @@ function displayBlankets(data) {
   }
 
   //   skriver ut array om antal är mellan 1 och 15
-  if (blanketsYes > 0 && blanketsYes < 16) {
+  if (blanketsYes.length > 0 && blanketsYes.length < 16) {
     blanketsYes.forEach((horse) => {
       let horsePEl = document.createElement("p");
 
