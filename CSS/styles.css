@@ -917,7 +917,8 @@ button {
     p {
       text-align: left;
       font-size: clamp(1rem, 2.2vw, 1.75rem);
-      background-color: #ffffff;
+      background-color: var(--darkbutton);
+      color: #ffffff;
       padding: 1vw;
       border-radius: 10px;
       margin: 0;
