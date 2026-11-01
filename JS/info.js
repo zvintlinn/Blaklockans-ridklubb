@@ -130,18 +130,20 @@ function medianTemp(data) {
 
 // hämtar rätt ikon beroende på vädertyp
 function weatherType(data) {
+  console.log(data.daily.weather_code);
+
   if (data.daily.weather_code < 2) {
-    return "images/svg/sol.svg";
+    return "images/SVG/sol.svg";
   } else if (data.daily.weather_code < 4) {
-    return "images/svg/solmoln.svg";
+    return "images/SVG/solmoln.svg";
   } else if (data.daily.weather_code < 63) {
-    return "images/svg/solregn.svg";
+    return "images/SVG/solregn.svg";
   } else if (data.daily.weather_code < 68) {
-    return "images/svg/regn.svg";
+    return "images/SVG/regn.svg";
   } else if (data.daily.weather_code < 95) {
-    return "images/svg/snow.svg";
+    return "images/SVG/snow.svg";
   } else if (data.daily.weather_code < 100) {
-    return "images/svg/thunder.svg";
+    return "images/SVG/thunder.svg";
   }
 }
 
