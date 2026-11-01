@@ -2,6 +2,9 @@
 
 Denna webbplats är resultatet av två veckors arbete i slutet av webbutvecklingsprogrammets första kurs, Introduktion till webbutveckling med HTML, CSS och JavaScript.
 
+## Publicering
+https://zvintlinn.github.io/Blaklockans-ridklubb
+
 ## Credits
 
 De flesta bilder i detta projekt är mina egna bilder som jag därmed har fri förfoganderätt över. Övriga bilder och ikoner är hämtade från unsplash.com samt icon-icons.com med credits nedan:
