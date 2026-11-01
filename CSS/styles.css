@@ -490,7 +490,7 @@ button {
   justify-self: center;
   align-self: last baseline;
   margin: 0.7vw;
-  font-size: clamp(0.6rem, 1vw, 1rem);
+  font-size: clamp(0.4rem, 1.4vw, 1rem);
 }
 .todo-knapp {
   background-color: #ccc;
